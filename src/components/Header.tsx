@@ -15,7 +15,7 @@ const Header = (props: Props) => {
         <div className="font-medium">DÜNYA’DA SUPERLİT</div>
         <div className="font-medium">İLETİŞİM</div>
         <div className="flex items-center">
-          <SearchIcon className="leading-none" />
+          <SearchIcon className="mb-[3px] leading-none" />
         </div>
       </div>
     </div>

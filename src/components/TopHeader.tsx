@@ -6,7 +6,7 @@ type Props = {};
 
 const TopHeader = (props: Props) => {
   return (
-    <div className="bg-custom-gray-4 hidden h-[60px] items-center px-[150px] lg:flex">
+    <div className="bg-custom-gray4 hidden h-[60px] items-center px-[150px] lg:flex">
       <LinkedIcon />
 
       <div className="ml-auto flex space-x-4">

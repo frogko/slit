@@ -1,23 +1,29 @@
-import Image from "next/image";
-import { Poppins } from "next/font/google";
 import Header from "@/components/Header";
 import TopHeader from "@/components/TopHeader";
 import HomeTopSlider from "@/components/containers/HomeTopSlider";
 import HomeAbout from "@/components/containers/HomeAbout";
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-poppins",
-});
+import HomeWorkFields from "@/components/containers/HomeWorkFields";
+import HomeGreenHouseSolutions from "@/components/containers/HomeGreenHouseSolutions";
+import HomeVideos from "@/components/containers/HomeVideos";
+import HomeNews from "@/components/containers/HomeNews";
+import HomeDocuments from "@/components/containers/HomeDocuments";
+import HomeLogos from "@/components/containers/HomeLogos";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className={`${poppins.variable} mx-auto h-full max-w-[1728px]`}>
+    <div>
       <TopHeader />
       <Header />
       <HomeTopSlider />
       <HomeAbout />
-    </main>
+      <HomeWorkFields />
+      <HomeGreenHouseSolutions />
+      <HomeVideos />
+      <HomeNews />
+      <HomeDocuments />
+      <HomeLogos />
+      <Footer />
+    </div>
   );
 }
