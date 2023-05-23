@@ -33,7 +33,7 @@ const settings = {
 const HomeGreenHouseSolutions = () => {
   return (
     <>
-      <h2 className="mb-8 text-center font-bold tracking-[1rem] text-white lg:text-3xl">
+      <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-white md:tracking-[1rem] lg:text-3xl">
         SUPERLİT SERA ÇÖZÜMLERİ
       </h2>
 
@@ -45,7 +45,7 @@ const HomeGreenHouseSolutions = () => {
       <CustomSlider
         settings={settings}
         arrowClass="text-white"
-        className="lg:py-16"
+        className="px-14 lg:py-16"
       >
         <GreenHouseItem />
         <GreenHouseItem />
@@ -58,7 +58,7 @@ const HomeGreenHouseSolutions = () => {
 
       <Button
         variant="secondary"
-        className="mx-auto mt-8 w-max bg-white tracking-wider"
+        className="mx-auto mt-8 block w-max bg-white px-12 tracking-wider"
       >
         TÜM SERA ÇÖZÜMLERİMİZ
       </Button>
@@ -67,8 +67,8 @@ const HomeGreenHouseSolutions = () => {
 };
 
 const GreenHouseItem = () => (
-  <div className="flex flex-col">
-    <div className="relative mx-4 h-[269px]  rounded-lg bg-white">
+  <div className="flex flex-col md:mx-4">
+    <div className="relative h-[269px] rounded-lg bg-white">
       <img
         src="/cokeltme-tanklari.jpg"
         className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"

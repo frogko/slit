@@ -17,7 +17,7 @@ const HomeNews = () => {
         <NewsItem className=" w-full md:w-1/2 lg:block lg:w-1/3" />
       </div>
 
-      <Button className="mx-auto mb-6 px-20 py-3">TÜM HABERLER</Button>
+      <Button className="mx-auto mb-6 block !px-20 py-3">TÜM HABERLER</Button>
 
       <div className="mx-auto w-1/2">
         <Line>

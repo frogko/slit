@@ -11,7 +11,7 @@ function Next({ onClick, arrowClass }) {
       id="next-icon"
       className={cx(
         arrowClass,
-        "absolute -right-12 top-1/2 z-10 h-[50px] w-[50px] -translate-y-1/2 cursor-pointer lg:-right-16 lg:block"
+        "absolute right-0 top-1/2 z-10 h-[50px] w-[50px] -translate-y-1/2 cursor-pointer lg:-right-16 lg:block"
       )}
     />
   );
@@ -23,7 +23,7 @@ function Prev({ onClick, arrowClass }) {
       id="next-icon"
       className={cx(
         arrowClass,
-        "absolute -left-12 top-1/2 z-10 h-[50px] w-[50px] -translate-y-1/2 rotate-180 cursor-pointer lg:-left-16 lg:block"
+        "absolute left-0 top-1/2 z-10 h-[50px] w-[50px] -translate-y-1/2 rotate-180 cursor-pointer lg:-left-16 lg:block"
       )}
     />
   );

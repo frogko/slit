@@ -10,7 +10,7 @@ const HomeAbout = () => {
           SUPERLİT
         </h3>
 
-        <h3 className="mb-12 text-center text-4xl font-bold tracking-[0.275em] text-custom-gray2 lg:mb-6 lg:text-left">
+        <h3 className="mb-12 text-center text-2xl font-bold tracking-[0.275em] text-custom-gray2 lg:mb-6 lg:text-left">
           HAKKINDA
         </h3>
 
@@ -42,12 +42,14 @@ const HomeAbout = () => {
           bir marka olmuştur.
         </div>
 
-        <div className="mx-auto mb-6 w-4/5 text-center text-custom-black lg:hidden">
+        <div className="mx-auto mb-6 w-full text-center font-medium text-custom-black lg:hidden">
           Kurulu kapasite açısından dünya çapında CTP boru sektörünün lider
           kuruluşlarından biridir.
         </div>
 
-        <Button className="mx-auto w-80 py-4 lg:hidden">HAKKIMIZDA</Button>
+        <Button className="mx-auto block w-48 py-3 lg:hidden">
+          HAKKIMIZDA
+        </Button>
       </div>
     </>
   );

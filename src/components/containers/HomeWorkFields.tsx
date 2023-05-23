@@ -38,14 +38,14 @@ const HomeWorkFields = () => {
         src="/work-fields-bg.jpg"
         className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-full w-full"
       />
-      <h2 className="mb-4 text-center text-2xl font-bold tracking-widest text-custom-gray5 lg:text-4xl lg:tracking-[1rem]">
+      <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-custom-gray5 lg:text-4xl lg:tracking-[1rem]">
         UYGULAMA ALANLARI
       </h2>
 
       <CustomSlider
         settings={settings}
         arrowClass="text-red"
-        className="relative lg:py-[80px]"
+        className="relative mb-8 px-14 lg:py-[80px]"
       >
         <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
         <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
@@ -56,7 +56,7 @@ const HomeWorkFields = () => {
         <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
       </CustomSlider>
 
-      <Button className="mx-auto mt-10 w-max py-3 lg:mt-20">
+      <Button className="mx-auto block w-max py-3 lg:mt-20">
         TÜM UYGULAMA ALANLARI
       </Button>
     </>

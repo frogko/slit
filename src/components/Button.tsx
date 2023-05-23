@@ -14,7 +14,7 @@ const Button = ({ children, variant = "primary", className }: Props) => {
       "font-bold px-5 py-3 text-custom-green": variant === "secondary",
     }
   );
-  return <div className={buttonClass}>{children}</div>;
+  return <button className={buttonClass}>{children}</button>;
 };
 
 export default Button;

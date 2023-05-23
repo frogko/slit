@@ -20,19 +20,19 @@ export default function Home() {
         <HomeTopSlider />
       </div>
 
-      <section className="mx-6 my-10 flex flex-col lg:mx-[150px] lg:my-[150px] lg:flex-row">
+      <section className="my-10 flex flex-col px-5 lg:mx-[150px] lg:my-[150px] lg:flex-row">
         <HomeAbout />
       </section>
 
-      <section className="relative px-12 py-[60px] lg:px-[150px]">
+      <section className="relative py-[60px] lg:px-[150px]">
         <HomeWorkFields />
       </section>
 
-      <section className="relative px-12 py-20 lg:px-[250px]">
+      <section className="relative py-20 lg:px-[250px]">
         <HomeGreenHouseSolutions />
       </section>
 
-      <section className="mb-[50px] px-6 py-[75px] lg:px-[100px]">
+      <section className="px-5 py-[60px] lg:mb-[50px] lg:px-[100px] lg:py-[75px]">
         <HomeVideos />
       </section>
 
@@ -40,13 +40,13 @@ export default function Home() {
         <HomeNews />
       </section>
 
-      <section className="px-6 pt-[50px] lg:px-[150px]">
+      <section className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
         <HomeDocuments />
       </section>
 
-      <div className="my-32 h-[1px] flex-grow bg-red" />
+      <div className="my-32 hidden h-[1px] flex-grow bg-red lg:block" />
 
-      <section className="mb-32 px-6 lg:px-[150px]">
+      <section className="mb-32 px-5 lg:px-[150px]">
         <HomeLogos />
       </section>
 

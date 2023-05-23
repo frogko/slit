@@ -6,7 +6,7 @@ type Props = {};
 const HomeDocuments = (props: Props) => {
   return (
     <>
-      <h2 className="mb-28 text-center font-bold tracking-[1rem] lg:text-3xl">
+      <h2 className="mb-28 text-center text-xl font-bold tracking-[1rem] tracking-widest lg:text-3xl">
         DÖKÜMANLAR
       </h2>
 
