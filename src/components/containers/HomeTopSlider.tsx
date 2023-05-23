@@ -37,7 +37,7 @@ const settings = {
 
 const HomeTopSlider = () => {
   return (
-    <div>
+    <>
       <Slider
         {...settings}
         className="homepage-slider relative"
@@ -55,7 +55,7 @@ const HomeTopSlider = () => {
       >
         <div className="relative">
           <img
-            className="h-[calc(100vh-210px)] object-cover"
+            className="h-[calc(100vh-210px)] w-full object-cover"
             src={"top-slider-first-image.png"}
           />
 
@@ -131,7 +131,7 @@ const HomeTopSlider = () => {
           </div>
         </div>
       </Slider>
-    </div>
+    </>
   );
 };
 

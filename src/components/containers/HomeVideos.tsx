@@ -9,18 +9,30 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: false,
+      },
+    },
+  ],
 };
 
 const HomeVideos = () => {
   return (
-    <div className="mb-[50px] py-[50px]">
+    <>
       <h2 className="mb-8 text-center font-bold tracking-widest lg:text-3xl">
         VİDEOLAR
       </h2>
 
       <CustomSlider
         arrowClass="text-red"
-        className="lg:px-[150px]"
+        className="lg:px-[50px]"
         settings={settings}
       >
         <VideoItem />
@@ -28,7 +40,7 @@ const HomeVideos = () => {
         <VideoItem />
         <VideoItem />
       </CustomSlider>
-    </div>
+    </>
   );
 };
 

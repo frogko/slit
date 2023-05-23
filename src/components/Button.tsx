@@ -6,10 +6,14 @@ interface Props extends React.HTMLProps<HTMLDivElement> {
 }
 
 const Button = ({ children, variant = "primary", className }: Props) => {
-  const buttonClass = cx(className, "pointer text-center w-max", {
-    "bg-red px-6 py-1 text-white font-bold": variant === "primary",
-    "font-bold px-5 py-3 text-custom-green": variant === "secondary",
-  });
+  const buttonClass = cx(
+    className,
+    "pointer text-center w-max rounded-sm cursor-pointer",
+    {
+      "bg-red px-6 py-1 text-white font-bold": variant === "primary",
+      "font-bold px-5 py-3 text-custom-green": variant === "secondary",
+    }
+  );
   return <div className={buttonClass}>{children}</div>;
 };
 

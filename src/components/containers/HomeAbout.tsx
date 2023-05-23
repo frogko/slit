@@ -2,11 +2,9 @@ import Button from "@/components/Button";
 import React from "react";
 import RightLinkButton from "../RightLinkButton";
 
-type Props = {};
-
-const HomeAbout = (props: Props) => {
+const HomeAbout = () => {
   return (
-    <div className="mx-6 my-20 flex flex-col lg:mx-[150px] lg:flex-row">
+    <>
       <div className="w-full lg:w-1/4">
         <h3 className="mb-2 text-center text-3xl font-light tracking-widest text-red lg:text-left">
           SUPERLİT
@@ -26,8 +24,8 @@ const HomeAbout = (props: Props) => {
         </RightLinkButton>
       </div>
 
-      <div className="mb-9 w-full text-justify lg:mb-0 lg:w-3/4 lg:pl-[14rem]">
-        <div className="no-scrollbar mb-6 flex space-x-6 overflow-y-scroll">
+      <div className="mb-4 w-full text-justify lg:mb-0 lg:w-3/4 lg:pl-[14rem]">
+        <div className="no-scrollbar mb-6 flex justify-center space-x-6 overflow-y-scroll lg:justify-normal">
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-1.png"} />
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-2.png"} />
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-3.png"} />
@@ -51,7 +49,7 @@ const HomeAbout = (props: Props) => {
 
         <Button className="mx-auto w-80 py-4 lg:hidden">HAKKIMIZDA</Button>
       </div>
-    </div>
+    </>
   );
 };
 

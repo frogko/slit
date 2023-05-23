@@ -13,7 +13,7 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${poppins.variable} mx-auto h-full max-w-[1728px]`}>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </main>
   );
 }

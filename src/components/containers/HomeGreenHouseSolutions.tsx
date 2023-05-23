@@ -3,17 +3,37 @@ import CustomSlider from "../CustomSlider";
 import Button from "../Button";
 
 const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
   slidesToShow: 4,
   slidesToScroll: 4,
+  infinite: true,
+  dots: false,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        dots: false,
+      },
+    },
+  ],
 };
 
-const HomeGreenHouseSolutions = (props: Props) => {
+const HomeGreenHouseSolutions = () => {
   return (
-    <div className="relative px-[200px] py-[50px]">
-      <h2 className="mb-8 text-center font-bold tracking-widest text-white lg:text-3xl">
+    <>
+      <h2 className="mb-8 text-center font-bold tracking-[1rem] text-white lg:text-3xl">
         SUPERLİT SERA ÇÖZÜMLERİ
       </h2>
 
@@ -25,39 +45,15 @@ const HomeGreenHouseSolutions = (props: Props) => {
       <CustomSlider
         settings={settings}
         arrowClass="text-white"
-        className="lg:px-[200px]"
+        className="lg:py-16"
       >
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
-
-        <div className="mx-4 flex items-center justify-center bg-white">
-          <img src="/cokeltme-tanklari.jpg" />
-        </div>
+        <GreenHouseItem />
+        <GreenHouseItem />
+        <GreenHouseItem />
+        <GreenHouseItem />
+        <GreenHouseItem />
+        <GreenHouseItem />
+        <GreenHouseItem />
       </CustomSlider>
 
       <Button
@@ -66,8 +62,21 @@ const HomeGreenHouseSolutions = (props: Props) => {
       >
         TÜM SERA ÇÖZÜMLERİMİZ
       </Button>
-    </div>
+    </>
   );
 };
+
+const GreenHouseItem = () => (
+  <div className="flex flex-col">
+    <div className="relative mx-4 h-[269px]  rounded-lg bg-white">
+      <img
+        src="/cokeltme-tanklari.jpg"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      />
+    </div>
+
+    <div className="mt-4 text-center text-white">CTP JEOTERMAL BORU</div>
+  </div>
+);
 
 export default HomeGreenHouseSolutions;
