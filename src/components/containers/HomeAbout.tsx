@@ -5,12 +5,12 @@ import RightLinkButton from "../RightLinkButton";
 const HomeAbout = () => {
   return (
     <>
-      <div className="w-full lg:w-1/4">
+      <div className="w-full lg:w-4/12">
         <h3 className="mb-2 text-center text-3xl font-light tracking-widest text-red lg:text-left">
           SUPERLİT
         </h3>
 
-        <h3 className="mb-12 text-center text-2xl font-bold tracking-[0.275em] text-custom-gray2 lg:mb-6 lg:text-left">
+        <h3 className="mb-12 text-center text-2xl font-bold tracking-[1rem] text-custom-gray2 lg:mb-6 lg:text-left">
           HAKKINDA
         </h3>
 
@@ -24,7 +24,7 @@ const HomeAbout = () => {
         </RightLinkButton>
       </div>
 
-      <div className="mb-4 w-full text-justify lg:mb-0 lg:w-3/4 lg:pl-[14rem]">
+      <div className="mb-4 w-full text-justify lg:mb-0 lg:w-8/12 lg:pl-[14rem]">
         <div className="no-scrollbar mb-6 flex justify-center space-x-6 overflow-y-scroll lg:justify-normal">
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-1.png"} />
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-2.png"} />

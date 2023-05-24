@@ -1,10 +1,10 @@
-import React from 'react'
-import LogoIcon from '@/components/icons/LogoIcon'
+import React from "react";
+import LogoIcon from "@/components/icons/LogoIcon";
 
-interface Props extends HTMLDivElement {}
+interface Props extends React.HTMLProps<HTMLDivElement> {}
 
 const Logo = (props: Props) => {
-    return <LogoIcon {...props} />
-}
+  return <LogoIcon {...props} />;
+};
 
-export default Logo
+export default Logo;

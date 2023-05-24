@@ -2,13 +2,14 @@ import React from "react";
 import Logo from "./Logo";
 import SearchIcon from "@/components/icons/SearchIcon";
 
-type Props = {};
-
-const Header = (props: Props) => {
+const Header = ({ className }: { className?: string }) => {
   return (
-    <div className="flex h-[113px] w-full items-center justify-between bg-white px-[150px] lg:h-[150px]">
+    <div
+      className={`flex h-[113px] w-full items-center justify-between bg-white lg:h-[150px] ${className}`}
+    >
       <Logo className="h-[65px] w-[250px]" />
-      <div className="hidden space-x-6 text-[18px] lg:flex">
+
+      <div className="hidden items-center space-x-6 text-[18px] lg:flex lg:pl-10 xl:px-0">
         <div className="font-medium">KURUMSAL</div>
         <div className="font-medium">ÜRÜN VE HİZMETLER</div>
         <div className="font-medium">TEKNOLOJİ VE KALİTE</div>
