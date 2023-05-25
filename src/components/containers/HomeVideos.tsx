@@ -33,7 +33,7 @@ const HomeVideos = () => {
 
       <CustomSlider
         arrowClass="text-red"
-        className="lg:px-[50px]"
+        className="homepage-video-slider lg:px-[50px]"
         settings={settings}
       >
         <VideoItem />

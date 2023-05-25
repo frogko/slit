@@ -40,7 +40,7 @@ const MobileHeader = () => {
             </div>
 
             <IoCloseSharp
-              className="absolute right-4 top-4 text-4xl text-white"
+              className="absolute right-4 top-4 cursor-pointer text-4xl text-white"
               onClick={() => setShow(false)}
             />
           </div>

@@ -2,13 +2,26 @@ import React from "react";
 import Button from "@/components/Button";
 import RotatedArrowIcon from "@/components/icons/RotatedArrowIcon";
 import CustomSlider from "../CustomSlider";
+import { Settings } from "react-slick";
 
 const HomeWorkFields = () => {
-  const settings = {
+  const settings: Settings = {
     slidesToShow: 3,
     slidesToScroll: 3,
     infinite: true,
     dots: true,
+    appendDots: (dots) => (
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          left: 0,
+          right: 0,
+        }}
+      >
+        <ul> {dots} </ul>
+      </div>
+    ),
     responsive: [
       {
         breakpoint: 1024,
@@ -45,7 +58,7 @@ const HomeWorkFields = () => {
       <CustomSlider
         settings={settings}
         arrowClass="text-red"
-        className="relative mb-8 px-14 lg:py-[80px]"
+        className="homepage-workfields-slider relative mb-8 px-14 lg:py-[80px]"
       >
         <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
         <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />

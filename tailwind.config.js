@@ -25,6 +25,7 @@ module.exports = {
         "custom-gray7": "#6D6D6D",
         "customg-gray8": "#E7E7E7",
         "custom-gray10": "#352525",
+        "custom-gray11": "#737373",
       },
     },
   },

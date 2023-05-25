@@ -33,6 +33,9 @@ const settings = {
   slidesToScroll: 1,
   nextArrow: <Next />,
   prevArrow: <Prev />,
+  customPaging: (i) => (
+    <div className="absolute bottom-0 h-5 w-5 rounded-full border border-white" />
+  ),
 };
 
 const HomeTopSlider = () => {

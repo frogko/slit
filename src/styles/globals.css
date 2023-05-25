@@ -35,3 +35,27 @@ h1,h2,h3,h4,h5,h6 {
   width: 300px;
   background: #373a47;
 }
+
+.homepage-slider .slick-dots {
+  @apply bottom-12;
+}
+
+.homepage-slider .slick-dots .slick-active {
+  @apply border-custom-gray bg-custom-gray rounded-full;
+}
+
+/* .homepage-workfields-slider .slick-dots  {
+  @apply bg-custom-gray11
+} */
+
+.homepage-workfields-slider .slick-dots .slick-active .slick-dot-item,
+.homepage-video-slider .slick-dots .slick-active .slick-dot-item{
+  @apply border-red bg-red rounded-full;
+}
+.homepage-workfields-slider .slick-dots {
+  @apply bottom-4;
+}
+
+.homepage-video-slider .slick-dots {
+  @apply -bottom-12
+}

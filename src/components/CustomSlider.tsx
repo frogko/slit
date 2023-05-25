@@ -41,6 +41,9 @@ const CustomSlider = ({ className, arrowClass, children, settings }: Props) => {
     <Slider
       className={className}
       {...settings}
+      customPaging={() => (
+        <div className="slick-dot-item absolute bottom-0 h-4 w-4 rounded-full border border-custom-gray11 bg-custom-gray11" />
+      )}
       nextArrow={<Next arrowClass={arrowClass} />}
       prevArrow={<Prev arrowClass={arrowClass} />}
     >

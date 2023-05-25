@@ -10,27 +10,20 @@ import HomeDocuments from "@/components/containers/HomeDocuments";
 import HomeLogos from "@/components/containers/HomeLogos";
 import Footer from "@/components/Footer";
 import MobileHeader from "@/components/MobileHeader";
-import { ClientOnly } from "@/components/ClientOnly";
 
 export default function Home() {
   return (
     <div>
-      <ClientOnly>
-        <div className="block lg:hidden">
-          <MobileHeader />
-        </div>
-      </ClientOnly>
+      <div className="block lg:hidden">
+        <MobileHeader />
+      </div>
 
-      <ClientOnly>
-        <div className="hidden lg:block">
-          <TopHeader />
-          <div className="px-[75px] 2xl:px-[150px]">
-            <Header />
-          </div>
+      <div className="hidden lg:block">
+        <TopHeader />
+        <div className="px-[75px] 2xl:px-[150px]">
+          <Header />
         </div>
-      </ClientOnly>
-
-      <Header className="hidden" />
+      </div>
 
       <div className="w-full">
         <HomeTopSlider />
