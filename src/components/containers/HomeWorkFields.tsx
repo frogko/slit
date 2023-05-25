@@ -69,7 +69,7 @@ const HomeWorkFields = () => {
         <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
       </CustomSlider>
 
-      <Button className="mx-auto block w-max py-3 lg:mt-20">
+      <Button className="mx-auto block w-max px-6 py-3 lg:mt-20">
         TÜM UYGULAMA ALANLARI
       </Button>
     </>

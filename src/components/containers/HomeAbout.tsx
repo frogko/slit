@@ -47,7 +47,7 @@ const HomeAbout = () => {
           kuruluşlarından biridir.
         </div>
 
-        <Button className="mx-auto block w-48 py-3 lg:hidden">
+        <Button className="mx-auto block w-48 px-6 py-3 lg:hidden">
           HAKKIMIZDA
         </Button>
       </div>

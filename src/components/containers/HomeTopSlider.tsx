@@ -5,6 +5,7 @@ import {
   AiOutlineRight as NextIcon,
   AiOutlineLeft as PrevIcon,
 } from "react-icons/ai";
+import Link from "next/link";
 
 function Next({ onClick }) {
   return (
@@ -71,9 +72,9 @@ const SliderItem = () => (
         <DownIcon className="text-3xl" />
       </div>
 
-      <button className="cursor-pointer text-xl font-medium tracking-[1rem]">
+      <Link href="/product/ctp" className="text-xl font-medium tracking-[1rem]">
         DETAYLAR
-      </button>
+      </Link>
     </div>
   </div>
 );

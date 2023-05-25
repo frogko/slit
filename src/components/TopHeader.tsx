@@ -8,8 +8,8 @@ const TopHeader = () => {
       <LinkedIcon />
 
       <div className="ml-auto flex space-x-4">
-        <Button className="">TEKLİF AL</Button>
-        <Button>E-KATALOG</Button>
+        <Button className="px-6 py-1">TEKLİF AL</Button>
+        <Button className="px-6 py-1">E-KATALOG</Button>
       </div>
     </div>
   );
