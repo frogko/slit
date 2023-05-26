@@ -57,7 +57,7 @@ const HomeWorkFields = () => {
 
       <CustomSlider
         settings={settings}
-        arrowClass="text-red"
+        arrowClass="text-red-600"
         className="homepage-workfields-slider relative mb-8 px-14 lg:py-[80px]"
       >
         <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />

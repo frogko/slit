@@ -14,7 +14,7 @@ const MobileHeader = () => {
       <Logo className="h-[65px] w-[175px]" />
 
       <RxHamburgerMenu
-        className="h-10 w-10 cursor-pointer text-red"
+        className="h-10 w-10 cursor-pointer text-red-600"
         onClick={() => setShow(true)}
       />
 

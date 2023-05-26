@@ -3,6 +3,10 @@ import Button from "../Button";
 
 type Props = {
   tabs: string[];
+  selectedIndex?: number;
+  className?: string;
+  onChange?: (index: number) => void;
+  children: ({ index }: { index: number }) => React.ReactNode;
 };
 
 const ProductDetailTabs = ({
@@ -12,7 +16,7 @@ const ProductDetailTabs = ({
   className,
   children,
 }: Props) => {
-  const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(0);
 
   return (
     <div className={`${className} flex flex-col`}>
@@ -22,7 +26,6 @@ const ProductDetailTabs = ({
             className="h-[60px] flex-1 px-3 py-2"
             variant={selectedTab === index ? "primary" : "gray"}
             onClick={() => {
-              console.log("test");
               setSelectedTab(index);
               onChange(index);
             }}
@@ -32,11 +35,9 @@ const ProductDetailTabs = ({
         ))}
       </div>
 
-      <div>
-        {children({
-          index: selectedTab,
-        })}
-      </div>
+      {children({
+        index: selectedTab,
+      })}
     </div>
   );
 };

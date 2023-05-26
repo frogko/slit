@@ -46,7 +46,7 @@ export default function Home() {
       <section className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
         <HomeDocuments />
       </section>
-      <div className="my-32 hidden h-[1px] flex-grow bg-red lg:block" />
+      <div className="my-32 hidden h-[1px] flex-grow bg-red-600 lg:block" />
       <section className="mb-32 px-5 lg:px-[150px]">
         <HomeLogos />
       </section>

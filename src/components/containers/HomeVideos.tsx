@@ -32,7 +32,7 @@ const HomeVideos = () => {
       </h2>
 
       <CustomSlider
-        arrowClass="text-red"
+        arrowClass="text-red-600"
         className="homepage-video-slider lg:px-[50px]"
         settings={settings}
       >

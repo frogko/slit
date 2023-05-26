@@ -7,12 +7,12 @@ type Props = {};
 
 const ProductDetailBanner = (props: Props) => {
   return (
-    <div className="relative h-[460px] w-full">
+    <div className="relative z-[3] h-[460px] w-full">
       <img
         src="/head-bg.png"
-        className="absolute bottom-0 left-0 right-0 top-0 -z-[10] h-full w-full"
+        className="absolute bottom-0 left-0 right-0 top-0 -z-[1] h-full w-full"
       />
-      <Container className="h-full">
+      <Container className="z-3 h-full">
         <div className="flex h-full">
           <div className="flex w-1/2 items-center">
             <img src="/ctp-boru-urun.png" className="mr-8 h-60 w-60" />
@@ -26,8 +26,8 @@ const ProductDetailBanner = (props: Props) => {
             <BreadCrumb text="CTP BORU" />
 
             <div className="flex flex-col">
-              <Button className="mb-3 w-[340px] py-3">ÜRÜN VİDEOSU</Button>
-              <Button variant="ghost" className="w-[340px] py-3">
+              <Button className="mb-3 !w-[340px] py-3">ÜRÜN VİDEOSU</Button>
+              <Button variant="ghost" className="!w-[340px] py-3">
                 ÜRÜN BROŞÜRÜ
               </Button>
             </div>
@@ -41,7 +41,7 @@ const ProductDetailBanner = (props: Props) => {
 };
 
 const ProductTag = () => (
-  <div className="max-w-max rounded-md bg-red p-[2px] font-medium text-white">
+  <div className="max-w-max rounded-md bg-red-600 p-[2px] font-medium text-white">
     ÜRÜNLER VE HİZMETLER
   </div>
 );

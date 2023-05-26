@@ -42,7 +42,7 @@ const NewsItem = ({ className }) => (
       tarafından imzalanmıştır.
     </p>
 
-    <RightLinkButton className="text-red">DETAYLAR</RightLinkButton>
+    <RightLinkButton className="text-red-600">DETAYLAR</RightLinkButton>
   </div>
 );
 

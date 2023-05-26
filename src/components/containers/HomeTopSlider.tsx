@@ -72,7 +72,10 @@ const SliderItem = () => (
         <DownIcon className="text-3xl" />
       </div>
 
-      <Link href="/product/ctp" className="text-xl font-medium tracking-[1rem]">
+      <Link
+        href="/product/ctp-pipe"
+        className="text-xl font-medium tracking-[1rem]"
+      >
         DETAYLAR
       </Link>
     </div>
