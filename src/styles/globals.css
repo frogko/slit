@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html {
- color: #484848;
- font-family: 'Poppins', sans-serif;
+  color: #484848;
+  font-family: "Poppins", sans-serif;
 }
 
-html, body, #__next {
- height: 100%;
+
+#__next {
+height: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: initial;
 }
 
@@ -20,13 +26,13 @@ h1,h2,h3,h4,h5,h6 {
   @variants responsive {
     /* Hide scrollbar for Chrome, Safari and Opera */
     .no-scrollbar::-webkit-scrollbar {
-        display: none;
+      display: none;
     }
 
     /* Hide scrollbar for IE, Edge and Firefox */
     .no-scrollbar {
-        -ms-overflow-style: none;  /* IE and Edge */
-        scrollbar-width: none;  /* Firefox */
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
     }
   }
 }
@@ -41,17 +47,17 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .homepage-slider .slick-dots .slick-active {
-  @apply border-custom-gray bg-custom-gray rounded-full;
+  @apply rounded-full border-custom-gray bg-custom-gray;
 }
 
 .homepage-workfields-slider .slick-dots .slick-active .slick-dot-item,
-.homepage-video-slider .slick-dots .slick-active .slick-dot-item{
-  @apply border-red-600 bg-red-600 rounded-full;
+.homepage-video-slider .slick-dots .slick-active .slick-dot-item {
+  @apply rounded-full border-custom-red bg-custom-red;
 }
 .homepage-workfields-slider .slick-dots {
   @apply bottom-4;
 }
 
 .homepage-video-slider .slick-dots {
-  @apply -bottom-12
+  @apply -bottom-12;
 }

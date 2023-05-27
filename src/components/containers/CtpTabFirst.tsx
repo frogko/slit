@@ -4,9 +4,8 @@ import ProductTwoColTable from "./ProductTwoColTable";
 const CtpTabFirst = () => {
   return (
     <div className="flex flex-col space-x-7">
-      <div className="grid grid-cols-2">
+      <div className="mb-12 grid grid-cols-2">
         <ProductTwoColTable
-          className="mb-12"
           data={[
             {
               left: "Çap",

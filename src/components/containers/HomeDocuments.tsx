@@ -26,7 +26,7 @@ const HomeDocuments = (props: Props) => {
 
 const DocumentItem = ({ text }) => (
   <div className="relative">
-    <div className="absolute -top-3 left-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-red-600">
+    <div className="absolute -top-3 left-1/2 h-12 w-12 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full bg-custom-red">
       <DownloadIcon />
     </div>
     <div className="rounded-lg bg-customg-gray8 py-6 text-center font-semibold text-custom-gray7">

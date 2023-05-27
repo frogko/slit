@@ -6,7 +6,7 @@ const HomeAbout = () => {
   return (
     <>
       <div className="w-full lg:w-4/12">
-        <h3 className="mb-2 text-center text-3xl font-light tracking-widest text-red-600 lg:text-left">
+        <h3 className="text-custom-red mb-2 text-center text-3xl font-light tracking-widest lg:text-left">
           SUPERLİT
         </h3>
 
@@ -19,7 +19,7 @@ const HomeAbout = () => {
           kuruluşlarından biridir.
         </div>
 
-        <RightLinkButton className="hidden items-center font-semibold text-red-600 lg:flex">
+        <RightLinkButton className="text-custom-red hidden items-center font-semibold lg:flex">
           HAKKIMIZDA
         </RightLinkButton>
       </div>

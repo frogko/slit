@@ -16,11 +16,11 @@ const ProductDetailTabs = ({
   className,
   children,
 }: Props) => {
-  const [selectedTab, setSelectedTab] = useState(0);
+  const [selectedTab, setSelectedTab] = useState(selectedIndex);
 
   return (
     <div className={`${className} flex flex-col`}>
-      <div className="flex space-x-4">
+      <div className="absolute left-0 top-0 flex w-full space-x-4 px-[150px]">
         {tabs.map((tab, index) => (
           <Button
             className="h-[60px] flex-1 px-3 py-2"

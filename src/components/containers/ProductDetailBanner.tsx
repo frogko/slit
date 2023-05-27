@@ -2,6 +2,8 @@ import React from "react";
 import Container from "../Container";
 import Button from "../Button";
 import Link from "next/link";
+import VideoIcon from "@/components/icons/VideoIcon";
+import PdfIcon from "@/components/icons/PdfIcon";
 
 type Props = {};
 
@@ -26,9 +28,16 @@ const ProductDetailBanner = (props: Props) => {
             <BreadCrumb text="CTP BORU" />
 
             <div className="flex flex-col">
-              <Button className="mb-3 !w-[340px] py-3">ÜRÜN VİDEOSU</Button>
-              <Button variant="ghost" className="!w-[340px] py-3">
-                ÜRÜN BROŞÜRÜ
+              <Button className="mb-3 flex !w-[340px] items-center justify-center space-x-2 py-3">
+                <VideoIcon className="h-8 w-8" />
+                <span>ÜRÜN VİDEOSU</span>
+              </Button>
+              <Button
+                variant="ghost"
+                className="flex !w-[340px] items-center justify-center space-x-2 py-3"
+              >
+                <PdfIcon className="h-7 w-7" />
+                <span>ÜRÜN BROŞÜRÜ</span>
               </Button>
             </div>
 
@@ -41,7 +50,7 @@ const ProductDetailBanner = (props: Props) => {
 };
 
 const ProductTag = () => (
-  <div className="max-w-max rounded-md bg-red-600 p-[2px] font-medium text-white">
+  <div className="max-w-max rounded-md bg-custom-red p-[2px] font-medium text-white">
     ÜRÜNLER VE HİZMETLER
   </div>
 );

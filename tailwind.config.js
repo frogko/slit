@@ -28,6 +28,7 @@ module.exports = {
         "custom-gray12": "#EDEDED",
         "custom-gray13": "#878787",
         "custom-gray14": "#F7F7F7",
+        "custom-red": "#DA0D15",
       },
     },
   },

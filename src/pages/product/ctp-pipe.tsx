@@ -13,20 +13,18 @@ const tabs = [
 ];
 const ctp = () => {
   return (
-    <div className="relative bg-custom-gray14">
+    <div className="relative min-h-screen bg-custom-gray14 pb-4">
       <ProductDetailBanner />
 
       <ProductDetailTabs
-        className="absolute left-0 z-[3] -my-9 w-full px-[150px]"
+        className="relative left-0 z-[3] -my-9 mb-4 w-full px-5 pt-9 lg:px-[150px]"
         tabs={tabs}
       >
         {({ index }) => (
-          <div className="mt-12">
+          <div className="bg-white px-[60px] py-12 pt-16">
             {index === 0 && <CtpTabFirst />}
             {index === 1 && <CtpTabSecond />}
             {index === 2 && <CtpTabThird />}
-            {/* {index === 3 && <div>4</div>} */}
-            {/* {index === 4 && <div>5</div>} */}
           </div>
         )}
       </ProductDetailTabs>

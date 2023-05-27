@@ -15,7 +15,7 @@ const Button = ({
     className,
     "pointer text-center w-max rounded-sm cursor-pointer",
     {
-      "bg-red-600 text-white font-bold": variant === "primary",
+      "bg-custom-red text-white font-bold": variant === "primary",
       "font-bold px-5 py-3 text-custom-green": variant === "secondary",
       "bg-custom-gray12 font-bold text-custom-gray13": variant === "gray",
       "bg-transparent font-bold text-white border-white border":
