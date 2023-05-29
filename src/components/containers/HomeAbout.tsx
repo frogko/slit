@@ -6,11 +6,11 @@ const HomeAbout = () => {
   return (
     <>
       <div className="w-full lg:w-4/12">
-        <h3 className="text-custom-red mb-2 text-center text-3xl font-light tracking-widest lg:text-left">
+        <h3 className="mb-2 text-center text-[18px] font-light tracking-widest text-custom-red lg:text-left lg:text-[32px]">
           SUPERLİT
         </h3>
 
-        <h3 className="mb-12 text-center text-2xl font-bold tracking-[1rem] text-custom-gray2 lg:mb-6 lg:text-left">
+        <h3 className="mb-12 text-center text-[24px] font-bold tracking-[1rem] text-custom-gray2 lg:mb-6 lg:text-left lg:text-[42px]">
           HAKKINDA
         </h3>
 
@@ -19,7 +19,7 @@ const HomeAbout = () => {
           kuruluşlarından biridir.
         </div>
 
-        <RightLinkButton className="text-custom-red hidden items-center font-semibold lg:flex">
+        <RightLinkButton className="hidden items-center font-semibold text-custom-red lg:flex">
           HAKKIMIZDA
         </RightLinkButton>
       </div>

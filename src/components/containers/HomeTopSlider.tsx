@@ -59,14 +59,16 @@ const SliderItem = () => (
     />
 
     <div className="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 px-5 text-center text-white lg:px-0">
-      <h2 className="mb-3 text-3xl font-bold lg:text-6xl">
+      <h2 className="mb-3 text-3xl font-bold lg:text-8xl">
         CAM ELYAF TAKVİYELİ
       </h2>
-      <h2 className="mb-4 text-3xl font-bold lg:text-6xl">
+      <h2 className="mb-4 text-3xl font-bold lg:text-8xl">
         POLYESTER (CTP) BORU
       </h2>
-      <h3 className="lg:text-2xl">CTP Boru, Manşon ve Ek parçaları</h3>
-      <div className="mb-12 lg:text-2xl">inceleyin..</div>
+      <h3 className="font-semibold lg:text-2xl">
+        CTP Boru, Manşon ve Ek parçaları
+      </h3>
+      <div className="mb-12 font-semibold lg:text-2xl">inceleyin..</div>
 
       <div className="mb-4 flex justify-center">
         <DownIcon className="text-3xl" />

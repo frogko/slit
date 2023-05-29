@@ -1,3 +1,5 @@
+import React from "react";
+
 import CtpMansonTabFirst from "@/components/containers/CtpMansonTabFirst";
 import CtpMansonTabSecond from "@/components/containers/CtpMansonTabSecond";
 import CtpMansonTabThird from "@/components/containers/CtpMansonTabThird";
@@ -39,7 +41,7 @@ const tabs = [
   },
 ];
 
-const CtpManson = () => {
+const CtpManhol = () => {
   const [productBannerDetails, setProductBannerDetails] = useState(
     tabs[0].productBannerDetails
   );
@@ -55,7 +57,8 @@ const CtpManson = () => {
         }}
         productBanner={
           <ProductDetailBanner
-            {...productBannerDetails}
+            bannerUrl=""
+            description="The basic models are well accepted by the designers and end users according to the general requirements of the non-pressure lines such as gravity sewer, wastewater lines and stormwater lines."
             breadcrumbText="CTP MANŞON"
           />
         }
@@ -64,4 +67,4 @@ const CtpManson = () => {
   );
 };
 
-export default CtpManson;
+export default CtpManhol;

@@ -5,9 +5,19 @@ import Link from "next/link";
 import VideoIcon from "@/components/icons/VideoIcon";
 import PdfIcon from "@/components/icons/PdfIcon";
 
-type Props = {};
+type Props = {
+  bannerUrl: string;
+  title: string;
+  description: string;
+  breadcrumbText: string;
+};
 
-const ProductDetailBanner = (props: Props) => {
+const ProductDetailBanner = ({
+  bannerUrl,
+  title,
+  description,
+  breadcrumbText,
+}: Props) => {
   return (
     <div className="relative z-[3] h-[460px] w-full">
       <img
@@ -17,15 +27,15 @@ const ProductDetailBanner = (props: Props) => {
       <Container className="z-3 h-full">
         <div className="flex h-full">
           <div className="flex w-1/2 items-center">
-            <img src="/ctp-boru-urun.png" className="mr-8 h-60 w-60" />
+            <img src={bannerUrl} className="mr-8 h-60 w-60" />
             <div className="space-y-4">
-              <ProductTag />
-              <ProductTitle />
-              <ProductDescription />
+              <ProductTag text="ÜRÜNLER VE HİZMETLER" />
+              <ProductTitle text={title} />
+              <ProductDescription text={description} />
             </div>
           </div>
           <div className="ml-auto flex w-1/2 flex-col items-end justify-between py-10">
-            <BreadCrumb text="CTP BORU" />
+            <BreadCrumb text={breadcrumbText} />
 
             <div className="flex flex-col">
               <Button className="mb-3 flex !w-[340px] items-center justify-center space-x-2 py-3">
@@ -49,26 +59,24 @@ const ProductDetailBanner = (props: Props) => {
   );
 };
 
-const ProductTag = () => (
+const ProductTag = ({ text }) => (
   <div className="max-w-max rounded-md bg-custom-red p-[2px] font-medium text-white">
-    ÜRÜNLER VE HİZMETLER
+    {text}
   </div>
 );
-const ProductTitle = () => (
-  <div className="text-3xl font-bold text-white">CTP BORU</div>
+const ProductTitle = ({ text }) => (
+  <div className="text-3xl font-bold text-white">{text}</div>
 );
-const ProductDescription = () => (
-  <div className="text-sm leading-6 text-white">
-    CTP boru esnek davranış gösteren, cam elyaf takviyeli termoset reçine ve
-    silika kumdan oluşan kompozit bir malzemedir.
-  </div>
+const ProductDescription = ({ text }) => (
+  <div className="text-sm leading-6 text-white">{text}</div>
 );
 
 const BreadCrumb = ({ text }) => (
   <div className="text-white">
     <Link href="/">ANASAYFA</Link>
     <span className="mx-2">/</span> <Link href="/">ÜRÜNLER VE HİZMETLER</Link>
-    <span className="mx-2">/</span> {text}
+    <span className="mx-2">/</span>
+    <span>{text}</span>
   </div>
 );
 

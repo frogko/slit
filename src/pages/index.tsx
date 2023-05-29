@@ -20,32 +20,40 @@ export default function Home() {
 
       <div className="hidden lg:block">
         <TopHeader />
-        <div className="px-[75px] 2xl:px-[150px]">
+
+        <div className="mx-auto max-w-[1728px] px-[75px] 2xl:px-[150px]">
           <Header />
         </div>
       </div>
 
-      <div className="w-full">
+      <section className="w-full">
         <HomeTopSlider />
-      </div>
+      </section>
+
       <section className="my-10 flex flex-col px-5 lg:mx-[150px] lg:my-[150px] lg:flex-row">
         <HomeAbout />
       </section>
+
       <section className="relative py-[60px] lg:px-[150px]">
         <HomeWorkFields />
       </section>
+
       <section className="relative py-20 lg:px-[250px]">
         <HomeGreenHouseSolutions />
       </section>
+
       <section className="px-5 py-[60px] lg:mb-[50px] lg:px-[100px] lg:py-[75px]">
         <HomeVideos />
       </section>
+
       <section className="hidden py-[50px] lg:block">
         <HomeNews />
       </section>
+
       <section className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
         <HomeDocuments />
       </section>
+
       <div className="my-32 hidden h-[1px] flex-grow bg-custom-red lg:block" />
       <section className="mb-32 px-5 lg:px-[150px]">
         <HomeLogos />

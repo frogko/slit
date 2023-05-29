@@ -7,15 +7,16 @@ type Props = {
       text: string[];
     }[];
   };
+  className?: string;
 };
 
-const ProductTable = ({ data }: Props) => {
+const ProductTable = ({ data, className }: Props) => {
   return (
-    <div className="flex flex-col border border-gray-400">
+    <div className={`flex flex-col border border-gray-400 ${className}`}>
       <div className="flex">
         {data.head.map((item, index) => (
           <div
-            className={`flex-1 py-2 text-center text-white ${
+            className={`flex flex-1 items-center justify-center py-2 text-center text-white ${
               index % 2 === 0 ? "bg-red-700" : "bg-red-800"
             }`}
             dangerouslySetInnerHTML={{ __html: item }}

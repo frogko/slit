@@ -7,6 +7,7 @@ type Props = {
   className?: string;
   onChange?: (index: number) => void;
   children: ({ index }: { index: number }) => React.ReactNode;
+  buttonClass?: string;
 };
 
 const ProductDetailTabs = ({
@@ -15,6 +16,7 @@ const ProductDetailTabs = ({
   tabs,
   className,
   children,
+  buttonClass,
 }: Props) => {
   const [selectedTab, setSelectedTab] = useState(selectedIndex);
 
@@ -23,7 +25,7 @@ const ProductDetailTabs = ({
       <div className="absolute left-0 top-0 flex w-full space-x-4 px-[150px]">
         {tabs.map((tab, index) => (
           <Button
-            className="h-[60px] flex-1 px-3 py-2"
+            className={`h-[60px] flex-1 px-3 py-2 ${buttonClass}`}
             variant={selectedTab === index ? "primary" : "gray"}
             onClick={() => {
               setSelectedTab(index);

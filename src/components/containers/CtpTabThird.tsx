@@ -92,7 +92,7 @@ const CtpTabThird = () => {
 
             <div className="inline-flex  justify-end border border-custom-red bg-white py-4 pl-7 pr-4">
               <p className="text-lg font-medium leading-9 text-gray-400">
-                sürekli elyaf sarma metodu ile üretilen borular için k=0,029
+                Sürekli elyaf sarma metodu ile üretilen borular için k=0,029
                 mmsavurma söküm metodu ile üretilen borular için k=0,012 mm
               </p>
             </div>
