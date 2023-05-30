@@ -3,7 +3,6 @@ import Button from "@/components/Button";
 import RotatedArrowIcon from "@/components/icons/RotatedArrowIcon";
 import CustomSlider from "../CustomSlider";
 import { Settings } from "react-slick";
-import Container from "../Container";
 
 const HomeWorkFields = () => {
   const settings: Settings = {
@@ -54,15 +53,15 @@ const HomeWorkFields = () => {
         className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-full w-full"
       />
 
-      <Container className="relative">
-        <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-custom-gray5 md:text-4xl md:tracking-[0.5rem]">
+      <div className="mx-auto max-w-[1728px]">
+        <h2 className="mb-8 text-center text-custom-basex font-bold tracking-widest text-custom-gray5 md:text-custom-xl md:tracking-[0.5rem]">
           UYGULAMA ALANLARI
         </h2>
 
         <CustomSlider
           settings={settings}
           arrowClass="text-custom-red"
-          className="homepage-workfields-slider relative mb-8 px-[50px] md:py-[80px] xl:px-[0]"
+          className="homepage-workfields-slider relative mb-8 px-[50px] md:px-[100px] md:py-[100px]"
         >
           <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
           <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
@@ -76,7 +75,7 @@ const HomeWorkFields = () => {
         <Button className="mx-auto block w-max px-6 py-3 lg:mt-20">
           TÜM UYGULAMA ALANLARI
         </Button>
-      </Container>
+      </div>
     </>
   );
 };

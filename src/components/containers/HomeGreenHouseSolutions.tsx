@@ -40,14 +40,14 @@ const HomeGreenHouseSolutions = () => {
       />
 
       <div className="mx-auto max-w-[1728px]">
-        <h2 className="mb-8 text-center text-custom-xbase font-bold tracking-[0.25rem] text-white md:text-custom-xl xl:tracking-[0.5rem]">
+        <h2 className="mb-8 text-center text-custom-basex font-bold tracking-[0.25rem] text-white md:text-custom-xl xl:tracking-[0.5rem]">
           SUPERLİT SERA ÇÖZÜMLERİ
         </h2>
 
         <CustomSlider
           settings={settings}
           arrowClass="text-white"
-          className="px-[50px] lg:py-16 xl:px-[0]"
+          className="relative mb-8 px-[50px] md:px-[100px] md:py-[100px] xl:mx-[100px]"
         >
           <GreenHouseItem />
           <GreenHouseItem />
@@ -60,7 +60,7 @@ const HomeGreenHouseSolutions = () => {
 
         <Button
           variant="secondary"
-          className="mx-auto mt-8 block w-max bg-white px-12 text-custom-xbase tracking-wider md:text-custom-xbase"
+          className="mx-auto mt-8 block w-max bg-white px-12 text-custom-sm tracking-wider md:text-custom-basex"
         >
           TÜM SERA ÇÖZÜMLERİMİZ
         </Button>

@@ -68,16 +68,16 @@ const SliderItem = () => (
 
     <Container className="h-full">
       <div className="absolute left-1/2 top-1/2 w-full max-w-[1728px] -translate-x-1/2 -translate-y-1/2 px-5 text-center text-white xl:px-[150px]">
-        <h2 className="mb-3 text-3xl font-bold md:text-5xl lg:text-7xl">
+        <h2 className="mb-3 text-custom-2xl font-bold md:text-7xl">
           CAM ELYAF TAKVİYELİ
         </h2>
-        <h2 className="mb-4 text-3xl font-bold md:text-5xl lg:text-7xl">
+        <h2 className="mb-4 text-3xl font-bold md:text-7xl">
           POLYESTER (CTP) BORU
         </h2>
-        <h3 className="text-[18px] font-medium md:text-2xl md:font-semibold lg:text-2xl">
+        <h3 className="text-custom-basex font-medium md:text-custom-md md:font-semibold">
           CTP Boru, Manşon ve Ek parçaları
         </h3>
-        <div className="text-[18px]font-medium  mb-12 md:text-2xl md:font-semibold lg:text-2xl">
+        <div className="mb-12 text-custom-basex font-medium md:text-custom-md md:font-semibold">
           inceleyin..
         </div>
 
@@ -87,7 +87,7 @@ const SliderItem = () => (
 
         <Link
           href="/product/ctp-pipe"
-          className="text-xl font-medium tracking-[1rem]"
+          className=" text-custom-basex font-bold tracking-[1rem] md:text-custom-xmd md:font-semibold"
         >
           DETAYLAR
         </Link>

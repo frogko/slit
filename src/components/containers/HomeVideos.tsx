@@ -38,7 +38,7 @@ const settings = {
 const HomeVideos = () => {
   return (
     <>
-      <h2 className="mb-8 text-center text-custom-xbase font-semibold tracking-widest md:text-custom-xl md:font-bold md:tracking-[0.5rem]">
+      <h2 className="mb-8 text-center text-custom-basex font-semibold tracking-widest md:text-custom-xl md:font-bold md:tracking-[0.5rem]">
         VİDEOLAR
       </h2>
 
@@ -53,7 +53,7 @@ const HomeVideos = () => {
         <VideoItem />
       </CustomSlider>
 
-      <Button className="mx-auto mt-12 block px-12 py-3 xl:hidden">
+      <Button className="mx-auto mt-12 block px-12 py-3 text-custom-basex xl:hidden">
         TÜM VİDEOLARIMIZ
       </Button>
     </>
@@ -69,8 +69,12 @@ const VideoItem = () => (
 
     <div className="w-full space-y-6 lg:w-1/2 lg:space-y-12 lg:pr-16">
       <div className="flex items-center">
-        <h2 className="text-custom-md font-bold text-white">SUPERLİT </h2>
-        <h2 className="ml-2 text-custom-md text-white">CTP</h2>
+        <h2 className="text-custom-xmd font-bold text-white md:text-custom-lg xl:text-custom-xl">
+          SUPERLİT{" "}
+        </h2>
+        <h2 className="ml-2 text-custom-xmd text-white md:text-custom-lg xl:text-custom-xl">
+          CTP
+        </h2>
       </div>
 
       <p className="text-custom-xsm font-medium text-white md:text-base">

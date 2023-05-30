@@ -6,15 +6,15 @@ const HomeAbout = () => {
   return (
     <>
       <div className="w-full xl:w-4/12">
-        <h3 className="mb-2 text-center text-[18px] font-light tracking-widest text-custom-red md:text-[32px] xl:text-left">
+        <h3 className="text-custom-basex mb-2 text-center font-light tracking-widest text-custom-red md:text-custom-mdx xl:text-left">
           SUPERLİT
         </h3>
 
-        <h3 className="mb-8 text-center text-[24px] font-bold tracking-[0.5rem] text-custom-gray2 md:text-[42px] xl:mb-6 xl:text-left">
+        <h3 className="mb-8 text-center text-custom-md font-bold tracking-[0.5rem] text-custom-gray2 md:text-custom-xl xl:mb-6 xl:text-left">
           HAKKINDA
         </h3>
 
-        <div className="mb-6 hidden text-[14px] font-medium leading-9 text-custom-black md:block md:text-center md:text-[18px] xl:block xl:text-left xl:text-[24px]">
+        <div className="mb-6 hidden text-custom-sm font-medium leading-9 text-custom-black md:block md:text-center md:text-[18px] xl:block xl:text-left xl:text-[24px]">
           Kurulu kapasite açısından dünya çapında CTP boru sektörünün lider
           kuruluşlarından biridir.
         </div>
@@ -34,7 +34,7 @@ const HomeAbout = () => {
           <img className="h-24 w-24 rounded-full" src={"/hakkinda-6.png"} />
         </div>
 
-        <div className="hidden font-medium leading-7 text-custom-gray3 md:block md:text-center xl:text-left">
+        <div className="text-custom-basex hidden font-medium leading-7 text-custom-gray3 md:block md:text-center xl:text-left">
           Basınçlı ve basınçsız CTP (Cam Elyaf Takviyeli Polyester) boruların
           uluslararası standartlara uygun üretimini ve satışını yapmakta olan
           SUPERLİT, geniş ürün yelpazesi, güvenilir kalitesi ile satış öncesi ve
@@ -42,12 +42,12 @@ const HomeAbout = () => {
           bir marka olmuştur.
         </div>
 
-        <div className="mx-auto mb-6 w-full text-center font-medium text-custom-black md:hidden">
+        <div className="mx-auto mb-6 w-full text-center text-custom-sm font-medium text-custom-black md:hidden">
           Kurulu kapasite açısından dünya çapında CTP boru sektörünün lider
           kuruluşlarından biridir.
         </div>
 
-        <Button className="mx-auto block w-48 px-6 py-3 md:hidden">
+        <Button className="mx-auto block w-48 px-6 py-3 text-custom-sm md:hidden">
           HAKKIMIZDA
         </Button>
       </div>

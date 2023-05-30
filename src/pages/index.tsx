@@ -41,7 +41,7 @@ export default function Home() {
         <HomeWorkFields />
       </div>
 
-      <div className="relative px-5 py-[50px] md:py-[100px] lg:px-[100px] 2xl:px-[250px]">
+      <div className="relative py-[50px] md:py-[100px]">
         <HomeGreenHouseSolutions />
       </div>
 
@@ -49,18 +49,20 @@ export default function Home() {
         <HomeVideos />
       </div>
 
-      <div className="hidden py-[50px] lg:block">
+      <div className="mx-auto max-w-[1728px] px-5 py-[50px] md:block md:py-[100px] xl:px-[150px]">
         <HomeNews />
       </div>
 
-      <div className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
+      <div className="mx-auto max-w-[1728px] px-5 py-[50px] pt-[50px] xl:px-[150px]">
         <HomeDocuments />
       </div>
 
       <div className="my-32 hidden h-[1px] flex-grow bg-custom-red lg:block" />
-      <div className="mb-32 px-5 lg:px-[150px]">
+
+      <div className="mx-auto mb-32 max-w-[1728px] px-5 xl:px-[150px]">
         <HomeLogos />
       </div>
+
       <Footer />
     </div>
   );
