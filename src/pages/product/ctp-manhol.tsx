@@ -1,5 +1,3 @@
-import React from "react";
-
 import CtpMansonTabFirst from "@/components/containers/CtpMansonTabFirst";
 import CtpMansonTabSecond from "@/components/containers/CtpMansonTabSecond";
 import CtpMansonTabThird from "@/components/containers/CtpMansonTabThird";
