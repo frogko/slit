@@ -21,7 +21,7 @@ const HomeNews = () => {
         TÜM HABERLER
       </Button>
 
-      <div className="mx-auto w-full md:w-1/2">
+      <div className="mx-auto w-full md:w-3/4">
         <Line>
           <Logo className="text-8xl" />
         </Line>

@@ -63,5 +63,5 @@ h6 {
 }
 
 .homepage-video-slider .slick-dots {
-  @apply -bottom-12;
+  @apply -bottom-12 left-0;
 }

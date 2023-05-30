@@ -45,7 +45,7 @@ export default function Home() {
         <HomeGreenHouseSolutions />
       </div>
 
-      <div className="mx-auto max-w-[1728px] px-5 py-[50px] md:py-[100px] lg:px-[100px]">
+      <div className="mx-auto max-w-[1728px] py-[50px] md:py-[100px]">
         <HomeVideos />
       </div>
 
@@ -53,13 +53,13 @@ export default function Home() {
         <HomeNews />
       </div>
 
-      <div className="mx-auto max-w-[1728px] px-5 py-[50px] pt-[50px] xl:px-[150px]">
+      <div className="mx-auto mb-[50px] max-w-[1728px] px-5 md:mb-0 xl:px-[150px]">
         <HomeDocuments />
       </div>
 
-      <div className="my-32 hidden h-[1px] flex-grow bg-custom-red lg:block" />
+      <div className="mt-[150px] hidden h-[1px] flex-grow bg-custom-red lg:block" />
 
-      <div className="mx-auto mb-32 max-w-[1728px] px-5 xl:px-[150px]">
+      <div className="mx-auto max-w-[1728px] px-5 md:py-[100px] xl:px-[150px] xl:py-[150px]">
         <HomeLogos />
       </div>
 

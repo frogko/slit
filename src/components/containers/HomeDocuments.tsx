@@ -1,9 +1,7 @@
 import React from "react";
 import DownloadIcon from "@/components/icons/DownloadIcon";
 
-type Props = {};
-
-const HomeDocuments = (props: Props) => {
+const HomeDocuments = () => {
   return (
     <>
       <h2
