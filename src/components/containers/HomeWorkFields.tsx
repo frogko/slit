@@ -3,6 +3,7 @@ import Button from "@/components/Button";
 import RotatedArrowIcon from "@/components/icons/RotatedArrowIcon";
 import CustomSlider from "../CustomSlider";
 import { Settings } from "react-slick";
+import Container from "../Container";
 
 const HomeWorkFields = () => {
   const settings: Settings = {
@@ -24,12 +25,13 @@ const HomeWorkFields = () => {
     ),
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1280,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
           infinite: true,
-          dots: false,
+          dots: true,
+          arrows: true,
         },
       },
       {
@@ -51,27 +53,30 @@ const HomeWorkFields = () => {
         src="/work-fields-bg.jpg"
         className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-full w-full"
       />
-      <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-custom-gray5 lg:text-4xl lg:tracking-[1rem]">
-        UYGULAMA ALANLARI
-      </h2>
 
-      <CustomSlider
-        settings={settings}
-        arrowClass="text-custom-red"
-        className="homepage-workfields-slider relative mb-8 px-14 lg:py-[80px]"
-      >
-        <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
-        <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
-        <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
+      <Container className="relative">
+        <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-custom-gray5 md:text-4xl md:tracking-[0.5rem]">
+          UYGULAMA ALANLARI
+        </h2>
 
-        <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
-        <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
-        <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
-      </CustomSlider>
+        <CustomSlider
+          settings={settings}
+          arrowClass="text-custom-red"
+          className="homepage-workfields-slider relative mb-8 px-[50px] md:py-[80px] xl:px-[0]"
+        >
+          <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
+          <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
+          <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
 
-      <Button className="mx-auto block w-max px-6 py-3 lg:mt-20">
-        TÜM UYGULAMA ALANLARI
-      </Button>
+          <WorkFieldCard iconUrl="/water.png" bgUrl="/temiz-su.png" />
+          <WorkFieldCard iconUrl="/wasted-water.png" bgUrl="/atik-su.png" />
+          <WorkFieldCard iconUrl="/water-store.png" bgUrl="/su-depolama.png" />
+        </CustomSlider>
+
+        <Button className="mx-auto block w-max px-6 py-3 lg:mt-20">
+          TÜM UYGULAMA ALANLARI
+        </Button>
+      </Container>
     </>
   );
 };

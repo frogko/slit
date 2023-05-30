@@ -4,6 +4,7 @@ import { AiOutlineDoubleRight as RightIcon } from "react-icons/ai";
 import RightLinkButton from "../RightLinkButton";
 import Button from "../Button";
 
+// 1280×800 and 768×1024.
 const settings = {
   dots: true,
   infinite: true,
@@ -12,12 +13,22 @@ const settings = {
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
         arrows: false,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 1280,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
         dots: false,
       },
     },
@@ -27,13 +38,13 @@ const settings = {
 const HomeVideos = () => {
   return (
     <>
-      <h2 className="mb-8 text-center text-xl font-bold tracking-widest lg:text-3xl">
+      <h2 className="mb-8 text-center text-custom-xbase font-semibold tracking-widest md:text-custom-xl md:font-bold md:tracking-[0.5rem]">
         VİDEOLAR
       </h2>
 
       <CustomSlider
         arrowClass="text-custom-red"
-        className="homepage-video-slider lg:px-[50px]"
+        className="homepage-video-slider md:px-14 lg:px-[50px]"
         settings={settings}
       >
         <VideoItem />
@@ -42,7 +53,7 @@ const HomeVideos = () => {
         <VideoItem />
       </CustomSlider>
 
-      <Button className="mx-auto mt-12 block px-12 py-3 lg:hidden">
+      <Button className="mx-auto mt-12 block px-12 py-3 xl:hidden">
         TÜM VİDEOLARIMIZ
       </Button>
     </>
@@ -58,17 +69,19 @@ const VideoItem = () => (
 
     <div className="w-full space-y-6 lg:w-1/2 lg:space-y-12 lg:pr-16">
       <div className="flex items-center">
-        <h2 className=" text-4xl font-bold text-white">SUPERLİT </h2>
-        <h2 className="ml-2 text-4xl text-white">CTP</h2>
+        <h2 className="text-custom-md font-bold text-white">SUPERLİT </h2>
+        <h2 className="ml-2 text-custom-md text-white">CTP</h2>
       </div>
 
-      <p className="font-medium text-white">
+      <p className="text-custom-xsm font-medium text-white md:text-base">
         SUPERLİT CTP Full Face Manşon® animasyon filmi, deniz altı için üretilen
         en büyük çaplı CTP borunun döşeme ve montaj videosu ve diğer tanıtım
         videolarımız
       </p>
 
-      <RightLinkButton className="text-white">TÜM VİDEOLARIMIZ</RightLinkButton>
+      <RightLinkButton className="hidden text-white xl:flex">
+        TÜM VİDEOLARIMIZ
+      </RightLinkButton>
     </div>
 
     <div className="w-full lg:w-1/2">

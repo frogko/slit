@@ -42,6 +42,10 @@ h6 {
   background: #373a47;
 }
 
+.homepage-slider.slick-slider {
+
+}
+
 .homepage-slider .slick-dots {
   @apply bottom-12;
 }

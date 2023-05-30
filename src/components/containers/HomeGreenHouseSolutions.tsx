@@ -1,6 +1,7 @@
 import React from "react";
 import CustomSlider from "../CustomSlider";
 import Button from "../Button";
+import Container from "../Container";
 
 const settings = {
   slidesToShow: 4,
@@ -9,7 +10,7 @@ const settings = {
   dots: false,
   responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1280,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -33,35 +34,37 @@ const settings = {
 const HomeGreenHouseSolutions = () => {
   return (
     <>
-      <h2 className="mb-8 text-center text-xl font-bold tracking-widest text-white md:tracking-[1rem] lg:text-3xl">
-        SUPERLİT SERA ÇÖZÜMLERİ
-      </h2>
-
       <img
         src="/sera-bg.jpg"
         className="absolute bottom-0 left-0 right-0 top-0 -z-10 h-full w-full"
       />
 
-      <CustomSlider
-        settings={settings}
-        arrowClass="text-white"
-        className="px-14 lg:py-16"
-      >
-        <GreenHouseItem />
-        <GreenHouseItem />
-        <GreenHouseItem />
-        <GreenHouseItem />
-        <GreenHouseItem />
-        <GreenHouseItem />
-        <GreenHouseItem />
-      </CustomSlider>
+      <div className="mx-auto max-w-[1728px]">
+        <h2 className="mb-8 text-center text-custom-xbase font-bold tracking-[0.25rem] text-white md:text-custom-xl xl:tracking-[0.5rem]">
+          SUPERLİT SERA ÇÖZÜMLERİ
+        </h2>
 
-      <Button
-        variant="secondary"
-        className="mx-auto mt-8 block w-max bg-white px-12 tracking-wider"
-      >
-        TÜM SERA ÇÖZÜMLERİMİZ
-      </Button>
+        <CustomSlider
+          settings={settings}
+          arrowClass="text-white"
+          className="px-[50px] lg:py-16 xl:px-[0]"
+        >
+          <GreenHouseItem />
+          <GreenHouseItem />
+          <GreenHouseItem />
+          <GreenHouseItem />
+          <GreenHouseItem />
+          <GreenHouseItem />
+          <GreenHouseItem />
+        </CustomSlider>
+
+        <Button
+          variant="secondary"
+          className="mx-auto mt-8 block w-max bg-white px-12 text-custom-xbase tracking-wider md:text-custom-xbase"
+        >
+          TÜM SERA ÇÖZÜMLERİMİZ
+        </Button>
+      </div>
     </>
   );
 };
@@ -75,7 +78,9 @@ const GreenHouseItem = () => (
       />
     </div>
 
-    <div className="mt-4 text-center text-white">CTP JEOTERMAL BORU</div>
+    <div className="mt-4 text-center text-custom-sm font-medium text-white md:text-custom-md">
+      CTP JEOTERMAL BORU
+    </div>
   </div>
 );
 

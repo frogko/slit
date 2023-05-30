@@ -10,54 +10,57 @@ import HomeDocuments from "@/components/containers/HomeDocuments";
 import HomeLogos from "@/components/containers/HomeLogos";
 import Footer from "@/components/Footer";
 import MobileHeader from "@/components/MobileHeader";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
     <div>
-      <div className="block lg:hidden">
+      <div className="hidden md:block">
+        <TopHeader />
+      </div>
+
+      <div className="block xl:hidden">
         <MobileHeader />
       </div>
 
-      <div className="hidden lg:block">
-        <TopHeader />
-
-        <div className="mx-auto max-w-[1728px] px-[75px] 2xl:px-[150px]">
+      <div className="hidden xl:block">
+        <Container>
           <Header />
-        </div>
+        </Container>
       </div>
 
-      <section className="w-full">
+      <div className="w-full">
         <HomeTopSlider />
-      </section>
+      </div>
 
-      <section className="my-10 flex flex-col px-5 lg:mx-[150px] lg:my-[150px] lg:flex-row">
+      <Container className="flex flex-col py-[50px] md:py-[100px] xl:flex-row">
         <HomeAbout />
-      </section>
+      </Container>
 
-      <section className="relative py-[60px] lg:px-[150px]">
+      <div className="relative py-[50px] md:py-[100px]">
         <HomeWorkFields />
-      </section>
+      </div>
 
-      <section className="relative py-20 lg:px-[250px]">
+      <div className="relative px-5 py-[50px] md:py-[100px] lg:px-[100px] 2xl:px-[250px]">
         <HomeGreenHouseSolutions />
-      </section>
+      </div>
 
-      <section className="px-5 py-[60px] lg:mb-[50px] lg:px-[100px] lg:py-[75px]">
+      <div className="mx-auto max-w-[1728px] px-5 py-[50px] md:py-[100px] lg:px-[100px]">
         <HomeVideos />
-      </section>
+      </div>
 
-      <section className="hidden py-[50px] lg:block">
+      <div className="hidden py-[50px] lg:block">
         <HomeNews />
-      </section>
+      </div>
 
-      <section className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
+      <div className="px-5 py-[50px] pt-[50px] lg:px-[150px]">
         <HomeDocuments />
-      </section>
+      </div>
 
       <div className="my-32 hidden h-[1px] flex-grow bg-custom-red lg:block" />
-      <section className="mb-32 px-5 lg:px-[150px]">
+      <div className="mb-32 px-5 lg:px-[150px]">
         <HomeLogos />
-      </section>
+      </div>
       <Footer />
     </div>
   );
