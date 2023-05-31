@@ -29,7 +29,9 @@ module.exports = {
         "custom-gray15": "#646464",
         "custom-red": "#DA0D15",
         "custom-gray16": "#5B5B5B",
-        "custom-gray17": "#747474",
+        "custom-gray17": "#F2F2F2",
+        "custom-gray18": "#A5A5A5",
+        "custom-gray19": "#747474",
       },
       fontSize: {
         "custom-xsm": "12px",

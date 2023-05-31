@@ -7,7 +7,7 @@ const Header = ({ className }: { className?: string }) => {
     <div
       className={`flex h-[113px] w-full items-center justify-between bg-white lg:h-[150px] ${className}`}
     >
-      <Logo className="h-[65px] w-[250px]" />
+      <Logo className="mr-6 h-[65px] w-[250px]" />
 
       <div className="hidden items-center space-x-6 text-[18px] lg:flex lg:pl-10 xl:px-0">
         <div className="font-medium">KURUMSAL</div>
