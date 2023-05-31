@@ -7,10 +7,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        sans: ["var(--font-poppins)"],
       },
       colors: {
         "custom-gray": "#D9D9D9",
@@ -31,6 +29,7 @@ module.exports = {
         "custom-gray15": "#646464",
         "custom-red": "#DA0D15",
         "custom-gray16": "#5B5B5B",
+        "custom-gray17": "#747474",
       },
       fontSize: {
         "custom-xsm": "12px",
