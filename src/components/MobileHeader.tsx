@@ -1,50 +1,46 @@
 import React, { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
+import cx from "classnames";
 
-import SearchIcon from "./icons/SearchIcon";
 import Logo from "./Logo";
 
 const MobileHeader = () => {
-  const [show, setShow] = useState(false);
+  const [isToggled, setIsToggled] = useState(false);
 
   return (
-    <div className="flex items-center justify-between p-5">
-      <Logo className="h-[65px] w-[175px]" />
+    <div className="relative">
+      <div className="flex items-center justify-between p-5">
+        <Logo className="h-[65px] w-[175px]" />
 
-      <RxHamburgerMenu
-        className="text-custom-red h-10 w-10 cursor-pointer"
-        onClick={() => setShow(true)}
-      />
+        {isToggled ? (
+          <IoCloseSharp
+            className="h-10 w-10 cursor-pointer text-custom-red"
+            onClick={() => setIsToggled(false)}
+          />
+        ) : (
+          <RxHamburgerMenu
+            className="h-10 w-10 cursor-pointer text-custom-red"
+            onClick={() => setIsToggled(true)}
+          />
+        )}
+      </div>
 
-      <div className="absolute left-0 top-0">
-        <Menu
-          customBurgerIcon={false}
-          customCrossIcon={false}
-          isOpen={show}
-          right
-          onOpen={() => setShow(true)}
-          onClose={() => setShow(false)}
-        >
-          <div className="flex h-full w-full flex-col  p-10">
-            <div className="space-y-2 text-[18px] text-white lg:flex">
-              <div className="font-medium">KURUMSAL</div>
-              <div className="font-medium">ÜRÜN VE HİZMETLER</div>
-              <div className="font-medium">TEKNOLOJİ VE KALİTE</div>
-              <div className="font-medium">DÜNYA’DA SUPERLİT</div>
-              <div className="font-medium">İLETİŞİM</div>
-              {/* <div className="flex items-center">
-                <SearchIcon className="mb-[3px] leading-none" />
-              </div> */}
-            </div>
-
-            <IoCloseSharp
-              className="absolute right-4 top-4 cursor-pointer text-4xl text-white"
-              onClick={() => setShow(false)}
-            />
-          </div>
-        </Menu>
+      <div
+        className={cx(
+          "absolute left-0 top-full z-10 flex h-0 w-full flex-col justify-center overflow-hidden bg-white",
+          {
+            "h-auto transition-all": isToggled,
+          }
+        )}
+      >
+        <div className="flex w-full flex-col space-y-8 bg-custom-gray17 px-8 py-8 text-custom-basex font-semibold text-custom-gray18">
+          <div className="font-medium">KURUMSAL</div>
+          <div className="font-medium">ÜRÜN VE HİZMETLER</div>
+          <div className="font-medium">TEKNOLOJİ VE KALİTE</div>
+          <div className="font-medium">DÜNYA’DA SUPERLİT</div>
+          <div className="font-medium">İLETİŞİM</div>
+        </div>
       </div>
     </div>
   );
