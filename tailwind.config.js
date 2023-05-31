@@ -32,6 +32,7 @@ module.exports = {
         "custom-gray17": "#F2F2F2",
         "custom-gray18": "#A5A5A5",
         "custom-gray19": "#747474",
+        "custom-gray20": "#C1C1C1",
       },
       fontSize: {
         "custom-xsm": "12px",
