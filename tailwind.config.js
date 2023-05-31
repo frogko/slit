@@ -20,7 +20,7 @@ module.exports = {
         "custom-green": "#166E00",
         "custom-gray6": "#7A7A7A",
         "custom-gray7": "#6D6D6D",
-        "customg-gray8": "#E7E7E7",
+        "custom-gray8": "#E7E7E7",
         "custom-gray10": "#352525",
         "custom-gray11": "#737373",
         "custom-gray12": "#EDEDED",

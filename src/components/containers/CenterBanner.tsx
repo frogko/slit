@@ -9,7 +9,7 @@ type Props = {
 
 const CenterBanner = ({ title, breadCrumbText, imgUrl }: Props) => {
   return (
-    <div className="relative z-[3] flex h-[460px] w-full flex-col text-white">
+    <div className="relative z-[3] flex h-[283px] w-full flex-col text-white">
       <img
         src={imgUrl}
         className="absolute bottom-0 left-0 right-0 top-0 -z-[1] h-full w-full"
