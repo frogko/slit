@@ -5,6 +5,7 @@ import CorporateTabFirst from "@/components/containers/CorporateTabFirst";
 import CorporateTabSecond from "@/components/containers/CorporateTabSecond";
 import CorporateTabThird from "@/components/containers/CorporateTabThird";
 import CorporateTabFourth from "@/components/containers/CorporateTabFourth";
+import CorporateTabFifth from "@/components/containers/CorporateTabFifth";
 
 const tabs = [
   {
@@ -23,10 +24,10 @@ const tabs = [
     text: "KALİTE POLİTİKALARIMIZ",
     component: <CorporateTabFourth />,
   },
-  // {
-  //   text: "İNSAN KAYNAKLARI",
-  //   component: <CorporateTabFirst />,
-  // },
+  {
+    text: "İNSAN KAYNAKLARI",
+    component: <CorporateTabFifth />,
+  },
 ];
 
 const Corporate = () => {
