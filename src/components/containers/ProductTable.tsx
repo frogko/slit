@@ -30,8 +30,8 @@ const ProductTable = ({ data, className }: Props) => {
             {item.text.map((bodyText, index) => (
               <div
                 key={index}
-                className={`flex-1 py-2 text-center ${
-                  index % 2 === 0 ? "bg-white" : "bg-gray-200"
+                className={`flex-1 py-2 text-center font-medium text-custom-gray19 ${
+                  index % 2 === 0 ? "bg-white" : "bg-custom-gray22"
                 }`}
               >
                 {bodyText}
