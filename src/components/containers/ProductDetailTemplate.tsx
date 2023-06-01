@@ -18,7 +18,7 @@ const ProductDetailTemplate = ({
   buttonClass,
 }: Props) => {
   return (
-    <div className="relative min-h-screen bg-custom-gray14 pb-4">
+    <div className="relative bg-custom-gray14 pb-4">
       {productBanner}
 
       <ProductDetailTabs
