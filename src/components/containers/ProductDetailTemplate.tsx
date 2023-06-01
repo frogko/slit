@@ -18,11 +18,11 @@ const ProductDetailTemplate = ({
   buttonClass,
 }: Props) => {
   return (
-    <div className="relative min-h-screen bg-custom-gray14 pb-4">
+    <div className="relative bg-custom-gray14 pb-4">
       {productBanner}
 
       <ProductDetailTabs
-        className="relative left-0 z-[3] -my-9 mx-auto mb-4 w-full px-5 pt-9 lg:max-w-[1728px] lg:px-[150px]"
+        className="relative left-0 z-[3] -my-9 mx-auto mb-16 w-full px-5 pt-9 lg:max-w-[1728px] lg:px-[150px]"
         tabs={tabs.map((tab) => tab.text)}
         onChange={(index) => onTabChange(index)}
         buttonClass={buttonClass}

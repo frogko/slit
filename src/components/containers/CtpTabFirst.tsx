@@ -18,7 +18,7 @@ const CtpTabFirst = () => {
           ]}
         />
 
-        <div className="pl-8 text-lg font-medium leading-9 text-gray-500">
+        <div className="pl-8 text-lg font-medium leading-9 text-custom-gray19">
           Standart boylar 6 m ve 12 m olmakla birlikte SUPERLİT CTP borular
           nakliye imkanları ile sınırlı olarak istenen uzunluklarda
           üretilebilir.
@@ -26,7 +26,7 @@ const CtpTabFirst = () => {
       </div>
 
       <div className="grid grid-cols-3">
-        <div className="text-lg font-medium leading-9 text-gray-500">
+        <div className="text-lg font-medium leading-9 text-custom-gray19">
           <li>TS EN 1796 (su temini)</li>
           <li>TS EN 14364 (atık su uygulamaları)</li>
           <li>ASTM D3262 (atık su uygulamaları)</li>
@@ -34,7 +34,7 @@ const CtpTabFirst = () => {
           <li>ASTM D3517 (su temini)</li>
         </div>
 
-        <div className="text-lg font-medium leading-9 text-gray-500">
+        <div className="text-lg font-medium leading-9 text-custom-gray19">
           <li>ASTM D3839 (döşeme)</li>
           <li>ISO 10465 (döşeme)</li>
 
@@ -45,7 +45,7 @@ const CtpTabFirst = () => {
           <li>AWWA C 950 (su temini)</li>
         </div>
 
-        <div className="text-lg font-medium leading-9 text-gray-500">
+        <div className="text-lg font-medium leading-9 text-custom-gray19">
           <li>AWWA M45 (tasarım ve döşeme)</li>
 
           <li>AS 3571.1 (atık su uygulamaları)</li>

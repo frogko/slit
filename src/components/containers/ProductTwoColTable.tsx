@@ -15,10 +15,10 @@ const ProductTwoColTable = ({ data, className }: Props) => {
     >
       {data.map((item) => (
         <div className="flex items-center divide-x">
-          <div className="w-2/6 bg-red-700 px-6 py-4 text-center text-white">
+          <div className="w-2/6 bg-red-700 px-6 py-4 text-center font-medium text-white">
             {item.left}
           </div>
-          <div className="w-4/6 px-4 text-center text-gray-500">
+          <div className="w-4/6 px-4 text-center font-medium text-custom-gray19">
             {item.right}
           </div>
         </div>
