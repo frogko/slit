@@ -5,6 +5,7 @@ import CtpTabFirst from "@/components/containers/CtpTabFirst";
 import CtpTabSecond from "@/components/containers/CtpTabSecond";
 import CtpTabThird from "@/components/containers/CtpTabThird";
 import ProductDetailTemplate from "@/components/containers/ProductDetailTemplate";
+import Layout from "@/components/Layout";
 
 const tabs = [
   {
@@ -23,7 +24,7 @@ const tabs = [
 ];
 const Ctp = () => {
   return (
-    <>
+    <Layout>
       <ProductDetailTemplate
         tabs={tabs}
         productBanner={
@@ -35,7 +36,7 @@ const Ctp = () => {
           />
         }
       ></ProductDetailTemplate>
-    </>
+    </Layout>
   );
 };
 

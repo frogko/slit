@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import TopHeader from "@/components/TopHeader";
 import HomeTopSlider from "@/components/containers/HomeTopSlider";
 import HomeAbout from "@/components/containers/HomeAbout";
 import HomeWorkFields from "@/components/containers/HomeWorkFields";
@@ -8,27 +6,12 @@ import HomeVideos from "@/components/containers/HomeVideos";
 import HomeNews from "@/components/containers/HomeNews";
 import HomeDocuments from "@/components/containers/HomeDocuments";
 import HomeLogos from "@/components/containers/HomeLogos";
-import Footer from "@/components/Footer";
-import MobileHeader from "@/components/MobileHeader";
 import Container from "@/components/Container";
+import Layout from "@/components/Layout";
 
 export default function Home() {
   return (
-    <div>
-      <div className="hidden md:block">
-        <TopHeader />
-      </div>
-
-      <div className="block xl:hidden">
-        <MobileHeader />
-      </div>
-
-      <div className="hidden xl:block">
-        <Container>
-          <Header />
-        </Container>
-      </div>
-
+    <Layout>
       <div className="w-full">
         <HomeTopSlider />
       </div>
@@ -62,8 +45,6 @@ export default function Home() {
       <div className="mx-auto max-w-[1728px] px-5 md:py-[100px] xl:px-[150px] xl:py-[150px]">
         <HomeLogos />
       </div>
-
-      <Footer />
-    </div>
+    </Layout>
   );
 }
