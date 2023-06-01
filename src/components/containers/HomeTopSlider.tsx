@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import Link from "next/link";
 import Container from "../Container";
+import Image from "next/image";
 
 function Next({ onClick }) {
   return (
@@ -45,7 +46,7 @@ const HomeTopSlider = () => {
   return (
     <div className="relative">
       <Slider ref={sliderRef} {...settings} className="homepage-slider">
-        <SliderItem />
+        <SliderItem fetchPriority="high" priority />
         <SliderItem />
         <SliderItem />
       </Slider>
@@ -59,11 +60,15 @@ const HomeTopSlider = () => {
   );
 };
 
-const SliderItem = () => (
+const SliderItem = ({ fetchPriority = "auto", priority }) => (
   <div className="relative h-[800px] w-full md:h-[900px]">
-    <img
+    <Image
+      fetchPriority={fetchPriority}
+      priority={priority}
+      fill
+      alt="Cam Elyaf Takviyeli Polyester Boru"
       className="absolute z-[-5] h-full w-full object-cover"
-      src={"top-slider-first-image.png"}
+      src={"/top-slider-first-image.png"}
     />
 
     <Container className="h-full">
