@@ -172,7 +172,7 @@ const BoardMember = ({
 const CorporateTabThird = (props: Props) => {
   return (
     <div>
-      <p className="mt-12 text-custom-mds font-semibold uppercase leading-10 text-custom-red">
+      <p className="mt-4 text-custom-mds font-semibold uppercase leading-10 text-custom-red">
         SUPERLIT YÖNETİM KURULU
       </p>
       <div className="divide-y ">
