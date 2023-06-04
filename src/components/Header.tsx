@@ -12,6 +12,7 @@ type HeadItemProps = {
   onMouseEnter?: () => void;
   onMouseLeave?: () => void;
   showArrow?: boolean;
+  url?: string;
 };
 const HeaderItem = ({
   text,
@@ -19,32 +20,40 @@ const HeaderItem = ({
   onMouseEnter = () => {},
   onMouseLeave = () => {},
   showArrow = false,
-}: HeadItemProps) => (
-  <div
-    className="mr-4 flex h-full flex-col justify-center font-medium"
-    onMouseEnter={onMouseEnter}
-    onMouseLeave={onMouseLeave}
-  >
-    <div className="flex items-center">
-      <span
-        className={`transition-all ${
-          isActive
-            ? "underline decoration-custom-red decoration-2 underline-offset-4"
-            : ""
-        } `}
-      >
-        {text}
-      </span>
-      {showArrow && (
-        <RxChevronDown
-          className={`transition-transform duration-[450ms] ${
-            isActive ? "!rotate-180" : ""
-          } ml-2`}
-        />
-      )}
+  url,
+}: HeadItemProps) => {
+  const itemClass = `transition-all ${
+    isActive
+      ? "underline decoration-custom-red decoration-2 underline-offset-4"
+      : ""
+  } `;
+
+  return (
+    <div
+      className="mr-4 flex h-full cursor-default flex-col justify-center font-medium"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
+      <div className="flex items-center">
+        {url ? (
+          <Link className={itemClass} href={url}>
+            {text}
+          </Link>
+        ) : (
+          <span className={itemClass}>{text}</span>
+        )}
+
+        {showArrow && (
+          <RxChevronDown
+            className={`transition-transform duration-[450ms] ${
+              isActive ? "!rotate-180" : ""
+            } ml-2`}
+          />
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const Header = ({ className }: { className?: string }) => {
   const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -79,11 +88,7 @@ const Header = ({ className }: { className?: string }) => {
       </Link>
 
       <div className="relative hidden flex-1 items-center justify-between text-[18px] lg:flex lg:pl-10 xl:px-0">
-        <div className="mr-4 flex h-full flex-col justify-center font-medium">
-          <div className="flex items-center">
-            <span>KURUMSAL</span>
-          </div>
-        </div>
+        <HeaderItem text="KURUMSAL" url="/corporate" />
 
         <HeaderItem
           text="ÜRÜN VE HİZMETLER"
@@ -96,7 +101,7 @@ const Header = ({ className }: { className?: string }) => {
           isActive={hoveredHeaderItemKey === "products"}
         />
 
-        <HeaderItem text="TEKNOLOJİ VE KALİTE" />
+        <HeaderItem text="TEKNOLOJİ VE KALİTE" url="/technology" />
 
         <HeaderItem text="DÜNYA’DA SUPERLİT" />
 

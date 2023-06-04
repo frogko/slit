@@ -6,7 +6,7 @@ import VideoIcon from "@/components/icons/VideoIcon";
 import PdfIcon from "@/components/icons/PdfIcon";
 
 type Props = {
-  bannerUrl: string;
+  bannerUrl?: string;
   title: string;
   description: string;
   breadcrumbText: string;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { RxChevronRight, RxChevronDown } from "react-icons/rx";
+import { RxChevronRight } from "react-icons/rx";
 import cx from "classnames";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -19,17 +19,17 @@ const dropdownItems = {
         {
           icon: <ProduceIcon />,
           text: "ÜRETİM TEKNOLOJİLERİMİZ",
-          url: "/product/ctp-pipe",
+          url: "/product/ctp-pipe/produce",
         },
         {
           icon: <UsageIcon />,
           text: "KULLANIM ALANLARI VE AVANTAJLAR",
-          url: "/product/ctp-pipe",
+          url: "/product/ctp-pipe/fields",
         },
         {
           icon: <PipeIcon />,
           text: "BORU ÇAPLARI VE TEKNİK ÖZELLİKLER",
-          url: "/product/ctp-pipe",
+          url: "/product/ctp-pipe/technical",
         },
         {
           icon: <BrochureIcon />,
@@ -46,22 +46,22 @@ const dropdownItems = {
         {
           icon: <MiniLogo />,
           text: "CTP FULL FACE MANŞON",
-          url: "/product/ctp-manson",
+          url: "/product/ctp-manson/full-face",
         },
         {
           icon: <MiniLogo />,
           text: "CTP KAYAR MANŞON",
-          url: "/product/ctp-manson",
+          url: "/product/ctp-manson/slight",
         },
         {
           icon: <MiniLogo />,
           text: "CTP JACKING MANŞON",
-          url: "/product/ctp-manson",
+          url: "/product/ctp-manson/jacking",
         },
         {
           icon: <BrochureIcon />,
           text: "BROŞÜR VE DÖKÜMANLAR",
-          url: "/product/ctp-manson",
+          url: "/product/ctp-manson/",
         },
       ],
     },
@@ -294,7 +294,7 @@ const MegaMenuLeftItem = ({
 }: MegaMenuLeftItemProps) => (
   <div
     {...props}
-    className="flex w-1/2 items-center pr-8 text-custom-md font-medium text-custom-gray18"
+    className="flex w-1/2 cursor-default items-center pr-8 text-custom-md font-medium text-custom-gray18"
   >
     {url ? (
       <Link className="block max-w-[180px]" href={url}>

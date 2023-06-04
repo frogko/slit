@@ -5,9 +5,11 @@ type Props = {
   tabs: {
     text: string;
     component: React.ReactNode;
+    key: string;
   }[];
+  activeTabKey: string;
   productBanner: React.ReactNode;
-  onTabChange?: (index: number) => void;
+  onTabChange?: (activeKey: string) => void;
   buttonClass?: string;
 };
 
@@ -16,22 +18,24 @@ const ProductDetailTemplate = ({
   productBanner,
   onTabChange = () => {},
   buttonClass,
+  activeTabKey,
 }: Props) => {
   return (
     <div className="relative bg-custom-gray14 pb-4">
       {productBanner}
 
       <ProductDetailTabs
+        activeTab={activeTabKey}
         className="relative left-0 z-[3] -my-9 mx-auto mb-16 w-full px-5 pt-9 lg:max-w-[1728px] lg:px-[150px]"
-        tabs={tabs.map((tab) => tab.text)}
-        onChange={(index) => onTabChange(index)}
+        tabs={tabs}
+        onChange={(activeKey) => onTabChange(activeKey)}
         buttonClass={buttonClass}
       >
-        {({ index }) => (
+        {() => (
           <div className="bg-white px-[60px] py-12 pt-16">
-            {tabs.map((tab, tabIndex) => {
+            {tabs.map((tab) => {
               const Component = tab.component;
-              return tabIndex === index && Component;
+              return activeTabKey === tab.key && Component;
             })}
           </div>
         )}

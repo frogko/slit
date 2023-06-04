@@ -1,14 +1,19 @@
+import Layout from "@/components/Layout";
 import CtpMansonTabFirst from "@/components/containers/CtpMansonTabFirst";
 import CtpMansonTabSecond from "@/components/containers/CtpMansonTabSecond";
 import CtpMansonTabThird from "@/components/containers/CtpMansonTabThird";
 import ProductDetailBanner from "@/components/containers/ProductDetailBanner";
 import ProductDetailTemplate from "@/components/containers/ProductDetailTemplate";
+import tabParamsGenerator from "@/helpers/tabParamsGenerator";
+import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 const tabs = [
   {
     text: "CTP FULL-FACE® MANŞON",
     component: <CtpMansonTabFirst />,
+    key: "full-face",
     productBannerDetails: {
       bannerUrl: "/ctp-fullface-urun.png",
       title: "CTP Full-Face Manşon",
@@ -19,6 +24,7 @@ const tabs = [
   {
     text: "CTP KAYAR MANŞON",
     component: <CtpMansonTabSecond />,
+    key: "slight",
     productBannerDetails: {
       bannerUrl: "/ctp-kayar-urun.png",
       title: "CTP KAYAR MANŞON",
@@ -30,6 +36,7 @@ const tabs = [
   {
     text: "CTP JACKING MANŞON",
     component: <CtpMansonTabThird />,
+    key: "jacking",
     productBannerDetails: {
       bannerUrl: "/ctp-jacking-urun.png",
       title: "CTP Jacking Manşon",
@@ -39,30 +46,48 @@ const tabs = [
   },
 ];
 
-const CtpManhol = () => {
-  const [productBannerDetails, setProductBannerDetails] = useState(
-    tabs[0].productBannerDetails
-  );
+const CtpManson = ({
+  bannerDetails,
+}: InferGetStaticPropsType<typeof getStaticProps>) => {
+  const router = useRouter();
 
   return (
-    <>
+    <Layout>
       <ProductDetailTemplate
         tabs={tabs}
-        onTabChange={(index) => {
-          const selectedTab = tabs[index];
-
-          setProductBannerDetails(selectedTab.productBannerDetails);
-        }}
+        activeTabKey={router.query.activeTab as string}
+        onTabChange={(activeTabKey) =>
+          router.push({
+            query: {
+              activeTab: activeTabKey,
+            },
+          })
+        }
         productBanner={
-          <ProductDetailBanner
-            bannerUrl=""
-            description="The basic models are well accepted by the designers and end users according to the general requirements of the non-pressure lines such as gravity sewer, wastewater lines and stormwater lines."
-            breadcrumbText="CTP MANŞON"
-          />
+          <ProductDetailBanner {...bannerDetails} breadcrumbText="CTP MANŞON" />
         }
       />
-    </>
+    </Layout>
   );
 };
 
-export default CtpManhol;
+export const getStaticPaths = async () => {
+  return {
+    paths: tabParamsGenerator(tabs),
+    fallback: false,
+  };
+};
+
+export const getStaticProps = async ({
+  params,
+}: GetStaticPropsContext<{ activeTab: string }>) => {
+  const foundParam = tabs.find((tab) => tab.key === params!.activeTab);
+
+  return {
+    props: {
+      bannerDetails: foundParam!.productBannerDetails,
+    },
+  };
+};
+
+export default CtpManson;
