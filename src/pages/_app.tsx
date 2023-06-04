@@ -1,3 +1,4 @@
+import { LazyMotion, domAnimation } from "framer-motion";
 import { Poppins } from "next/font/google";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -13,7 +14,9 @@ const poppins = Poppins({
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <main className={`${poppins.variable} mx-auto h-full font-sans`}>
-      <Component {...pageProps} />
+      <LazyMotion features={domAnimation}>
+        <Component {...pageProps} />
+      </LazyMotion>
     </main>
   );
 }
