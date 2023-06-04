@@ -210,7 +210,7 @@ const MegaMenu = ({
   }, []);
 
   return (
-    <div className="relative px-8 py-4">
+    <div className="relative space-y-10 px-8 py-4">
       {Object.keys(dropdownItems).map((key) => {
         return dropdownItems[key]?.map((dropdownItem, index) => (
           <div>
@@ -271,7 +271,7 @@ type MegaMenuRightItemProps = {
 const MegaMenuRightItem = ({ url, icon, text }: MegaMenuRightItemProps) => (
   <Link
     href={url}
-    className="pointer mb-6 flex items-center text-custom-basex decoration-custom-red underline-offset-4 hover:underline"
+    className="pointer mb-8 flex items-center text-custom-basex decoration-custom-red underline-offset-4 hover:underline"
   >
     <span className="mr-4 text-2xl">{icon}</span>
     {text}
@@ -294,7 +294,7 @@ const MegaMenuLeftItem = ({
 }: MegaMenuLeftItemProps) => (
   <div
     {...props}
-    className="mb-10 flex w-1/2 items-center pr-8 text-custom-md font-medium text-custom-gray18"
+    className="flex w-1/2 items-center pr-8 text-custom-md font-medium text-custom-gray18"
   >
     {url ? (
       <Link className="block max-w-[180px]" href={url}>
