@@ -28,7 +28,9 @@ const HeaderItem = ({
     <div className="flex items-center">
       <span
         className={`transition-all ${
-          isActive ? "underline decoration-custom-red underline-offset-4" : ""
+          isActive
+            ? "underline decoration-custom-red decoration-2 underline-offset-4"
+            : ""
         } `}
       >
         {text}
