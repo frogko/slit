@@ -241,7 +241,7 @@ const Form = () => (
     ))}
 
     <div className="mt-12 text-custom-basex font-semibold text-custom-gray6">
-      <p className="h-[60px] border border-custom-gray bg-custom-gray23 pl-7 leading-[60px]">
+      <p className="h-[60px] border border-custom-gray bg-custom-gray25 pl-7 leading-[60px]">
         Varsa diğer görüş ve düşünceleriniz:
       </p>
       <textarea className="h-[165px] w-full resize-none bg-custom-gray14 p-5 placeholder-custom-gray13" />
@@ -286,11 +286,11 @@ const QuestionTable = ({
     <div className="border-custom-gray-20 flex h-[90px] flex-row items-center border text-custom-md font-semibold text-custom-gray15">
       <p className="w-2/3 pl-7">SORULAR</p>
       <div className="flex h-full grow text-center leading-[90px]">
-        <p className="flex-1 bg-custom-gray23">1</p>
+        <p className="flex-1 bg-custom-gray25">1</p>
         <p className="flex-1 bg-custom-gray14">2</p>
-        <p className="flex-1 bg-custom-gray23">3</p>
+        <p className="flex-1 bg-custom-gray25">3</p>
         <p className="flex-1 bg-custom-gray14">4</p>
-        <p className="flex-1 bg-custom-gray23">5</p>
+        <p className="flex-1 bg-custom-gray25">5</p>
       </div>
     </div>
     <div className="border-custom-gray-20 border">
@@ -299,7 +299,7 @@ const QuestionTable = ({
           className={cx(
             "flex h-[90px] flex-row items-center text-custom-basex font-semibold text-custom-gray15",
             {
-              "bg-custom-gray23": index % 2 === 0,
+              "bg-custom-gray25": index % 2 === 0,
               "bg-custom-gray14": index % 2 !== 0,
             }
           )}
@@ -308,7 +308,7 @@ const QuestionTable = ({
           <div className="flex h-full grow accent-custom-red">
             <div className="flex flex-1 justify-center">
               <input
-                className="box-border w-7 border-2 border-custom-gray23"
+                className="box-border w-7 border-2 border-custom-gray25"
                 type="radio"
                 name={`${tableKey}_${index}`}
                 value="1"
@@ -316,7 +316,7 @@ const QuestionTable = ({
             </div>
             <div className="flex flex-1 justify-center">
               <input
-                className="box-border w-7 border-2 border-custom-gray23"
+                className="box-border w-7 border-2 border-custom-gray25"
                 type="radio"
                 name={`${tableKey}_${index}`}
                 value="2"
@@ -324,7 +324,7 @@ const QuestionTable = ({
             </div>
             <div className="flex flex-1 justify-center">
               <input
-                className="box-border w-7 border-2 border-custom-gray23"
+                className="box-border w-7 border-2 border-custom-gray25"
                 type="radio"
                 name={`${tableKey}_${index}`}
                 value="3"
@@ -332,7 +332,7 @@ const QuestionTable = ({
             </div>
             <div className="flex flex-1 justify-center">
               <input
-                className="box-border w-7 border-2 border-custom-gray23"
+                className="box-border w-7 border-2 border-custom-gray25"
                 type="radio"
                 name={`${tableKey}_${index}`}
                 value="4"
@@ -340,7 +340,7 @@ const QuestionTable = ({
             </div>
             <div className="flex flex-1 justify-center">
               <input
-                className="box-border w-7 border-2 border-custom-gray23"
+                className="box-border w-7 border-2 border-custom-gray25"
                 type="radio"
                 name={`${tableKey}_${index}`}
                 value="5"
