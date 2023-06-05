@@ -5,8 +5,8 @@ type Props = {};
 const CtpTabSecond = (props: Props) => {
   return (
     <div>
-      <div className="inline-flex flex-col justify-start space-y-10">
-        <p className="mb-12 text-3xl font-semibold uppercase tracking-wider text-custom-red">
+      <div className="inline-flex flex-col justify-start space-y-5">
+        <p className="mb-6 text-3xl font-semibold uppercase tracking-wider text-custom-red">
           Kullanım Alanları
         </p>
         <p className="!mt-0 text-lg font-semibold leading-9 tracking-wider text-custom-gray19">
@@ -29,7 +29,7 @@ const CtpTabSecond = (props: Props) => {
       </div>
 
       <div className="inline-flex flex-col items-start justify-end space-y-5">
-        <p className="my-12 text-3xl font-semibold uppercase tracking-wider text-custom-red">
+        <p className="mb-6 mt-12 text-3xl font-semibold uppercase tracking-wider text-custom-red">
           AVANTAJLARI
         </p>
         <div className="!mt-0 flex flex-col justify-end space-y-5">

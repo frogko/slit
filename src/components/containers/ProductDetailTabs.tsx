@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Button from "../Button";
 
 type Props = {
@@ -24,6 +24,10 @@ const ProductDetailTabs = ({
   buttonClass,
 }: Props) => {
   const [selectedTab, setSelectedTab] = useState(activeTab);
+
+  useEffect(() => {
+    setSelectedTab(activeTab);
+  }, [activeTab]);
 
   return (
     <div className={`${className} flex flex-col`}>

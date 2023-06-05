@@ -1,10 +1,11 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Logo from "./Logo";
 import SearchIcon from "@/components/icons/SearchIcon";
 import { RxChevronDown } from "react-icons/rx";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
 import MegaMenu from "@/components/MegaMenu";
+import { useRouter } from "next/router";
 
 type HeadItemProps = {
   text: string;
@@ -56,12 +57,17 @@ const HeaderItem = ({
 };
 
 const Header = ({ className }: { className?: string }) => {
+  const router = useRouter();
   const [isMenuOpened, setIsMenuOpened] = useState(false);
   const [hoveredItemKey, setHoveredItemKey] = useState("");
   const [hoveredHeaderItemKey, setHoveredHeaderItemKey] = useState("");
 
   const isHoveredRealTime = useRef(false);
   const timeoutRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    setIsMenuOpened(false);
+  }, [router.asPath]);
 
   const handleOpenMenuOnMouseEnter = () => {
     isHoveredRealTime.current = true;
@@ -126,6 +132,7 @@ const Header = ({ className }: { className?: string }) => {
               className="absolute left-0 top-[150px] z-20 h-[688px] w-full bg-white"
             >
               <MegaMenu
+                setIsMenuOpened={setIsMenuOpened}
                 hoveredItemKey={hoveredItemKey}
                 setHoveredItemKey={setHoveredItemKey}
                 onMenuClosed={() => setHoveredHeaderItemKey("")}
