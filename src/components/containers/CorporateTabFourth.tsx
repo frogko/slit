@@ -11,12 +11,12 @@ import Button from "../Button";
 type Props = {};
 
 const Docs = [
-  { name: "KALİTE POLİTİKASI", backgroundImg: "./kalite-dokuman.png" },
-  { name: "CYS-ISG POLİTİKASI", backgroundImg: "./cys-isg-dokuman.png" },
-  { name: "KURUMSAL DEĞERLER", backgroundImg: "./kurumsal-dokuman.png" },
+  { name: "KALİTE POLİTİKASI", backgroundImg: "/kalite-dokuman.png" },
+  { name: "CYS-ISG POLİTİKASI", backgroundImg: "/cys-isg-dokuman.png" },
+  { name: "KURUMSAL DEĞERLER", backgroundImg: "/kurumsal-dokuman.png" },
   {
     name: "ÇEVRESEL ÜRÜN BEYANI- EPD",
-    backgroundImg: "./cevresel-urun-dokuman.png",
+    backgroundImg: "/cevresel-urun-dokuman.png",
   },
 ];
 
@@ -125,7 +125,7 @@ const Document = ({
 }) => (
   <div className="relative flex justify-center">
     <div className="absolute bottom-[69px] flex flex-col items-center">
-      <p className="text-custom-basex font-semibold uppercase text-white">
+      <p className="text-center text-custom-basex font-semibold uppercase text-white">
         {name}
       </p>
       <p className="mt-2 text-custom-sm text-white">DÖKÜMANI İNDİR</p>
