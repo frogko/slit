@@ -94,7 +94,7 @@ const Header = ({ className }: { className?: string }) => {
       </Link>
 
       <div className="relative hidden flex-1 items-center justify-between text-[18px] lg:flex lg:pl-10 xl:px-0">
-        <HeaderItem text="KURUMSAL" url="/corporate" />
+        <HeaderItem text="KURUMSAL" url="/corporate/about-us" />
 
         <HeaderItem
           text="ÜRÜN VE HİZMETLER"
