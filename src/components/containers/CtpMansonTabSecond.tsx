@@ -3,7 +3,7 @@ import React from "react";
 const CtpMansonTabSecond = () => {
   return (
     <div>
-      <p className="mb-8 text-lg font-medium leading-9 text-custom-gray15">
+      <p className="mb-8 text-lg font-semibold leading-9 text-custom-gray15">
         Superlit AR-GE çalışmaları neticesinde geliştirilen ; SUPERLİT FULL-FACE
         CTP Kayar Manşon
       </p>
